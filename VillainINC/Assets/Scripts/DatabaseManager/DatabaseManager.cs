@@ -10,13 +10,7 @@ namespace Munkur
         #region RecordedDataProperties
 
         private List<RecordedDataHandler> recordedDataHandlerList;
-
-        private PlayerDataHandler playerDataHandler;
-        public PlayerDataHandler PlayerDataHandler => playerDataHandler;
-
-        private GameDataHandler gameDataHandler;
-        public GameDataHandler GameDataHandler => gameDataHandler;
-
+        
         #endregion
         
         public override void Awake()
@@ -28,12 +22,6 @@ namespace Munkur
         private void InitRecordedDataHandlers()
         {
             recordedDataHandlerList = new List<RecordedDataHandler>();
-            
-            playerDataHandler = new PlayerDataHandler("PlayerData.json", new PlayerRecordedData(), useEncryption);
-            recordedDataHandlerList.Add(playerDataHandler);
-
-            gameDataHandler = new GameDataHandler("GameData.json", new GameRecordedData(), useEncryption);
-            recordedDataHandlerList.Add(gameDataHandler);
         }
 
         public void SaveData(RecordedDataHandler recordedDataHandler)
