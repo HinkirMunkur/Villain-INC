@@ -832,9 +832,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   subjectRigidbody2D: {fileID: 2478162064733915481}
-  runSpeed: 5
-  pushSpeed: 4
-  forceToJumpOn: 4
+  runSpeed: 1
+  pushSpeed: 0.3
 --- !u!1 &6957842318612114440
 GameObject:
   m_ObjectHideFlags: 0

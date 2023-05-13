@@ -8,8 +8,7 @@ public class MovementBehaviour : MonoBehaviour
     [SerializeField] private Rigidbody2D subjectRigidbody2D;
     [SerializeField] private float runSpeed;
     [SerializeField] private float pushSpeed;
-    [SerializeField] private float forceToJumpOn;
-    
+
     private Vector2 subjectRunVelocity;
     private Vector2 subjectPushItemVelocity;
     private Vector2 subjectTrambolineForceEffect;

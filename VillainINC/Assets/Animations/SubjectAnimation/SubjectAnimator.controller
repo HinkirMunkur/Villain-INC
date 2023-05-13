@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RunnerStabbedAbove
+  m_Name: SubjectDie_Impale_Above
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -33,7 +33,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RunnerStabbedBelow
+  m_Name: SubjectDie_Impale_Below
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -59,7 +59,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RunnerRun
+  m_Name: SubjectRun
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -85,7 +85,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RunnerShot
+  m_Name: SubjectDie_Shot
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -111,7 +111,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RunnerCrushed
+  m_Name: SubjectDie_Crushed
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -137,7 +137,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RunnerFall
+  m_Name: SubjectFall
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -163,7 +163,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RunnerIdle
+  m_Name: SubjectIdle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -265,7 +265,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RunnerDrop
+  m_Name: SubjectLand
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -291,7 +291,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RunnerPush
+  m_Name: SubjectPush
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -366,7 +366,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RunnerJump
+  m_Name: SubjectJump
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
