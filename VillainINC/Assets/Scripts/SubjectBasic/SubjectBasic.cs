@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Munkur;
@@ -9,5 +10,10 @@ public class SubjectBasic : MonoBehaviour
     public MovementBehaviour MovementBehaviour => movementBehaviour;
     
     [SerializeField] private SubjectAnimationController subjectAnimationController;
-    public SubjectAnimationController SubjectAnimationController => subjectAnimationController;    
+    public SubjectAnimationController SubjectAnimationController => subjectAnimationController;
+
+    [SerializeField] private SubjectStateMachineController subjectStateMachineController;
+    public SubjectStateMachineController SubjectStateMachineController => subjectStateMachineController;
+
+    
 }
