@@ -16,7 +16,7 @@ PlayerSettings:
   productName: 2DGameJamCodeBase
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0.043137256, g: 0.043137256, b: 0.08627451, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
@@ -153,6 +153,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.DefaultCompany.2DGameJamCodeBase
     Standalone: com.DefaultCompany.2DGameJamCodeBase
   buildNumber:
     Standalone: 0
