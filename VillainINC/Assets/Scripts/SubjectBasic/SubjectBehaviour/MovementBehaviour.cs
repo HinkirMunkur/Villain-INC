@@ -19,7 +19,11 @@ public class MovementBehaviour : MonoBehaviour
     }
 
     private float _fallSpeed;
-    private float _landLimit = -4f;
+    public float FallSpeed 
+    {
+        set { _fallSpeed = value; }
+    }
+    private float _landLimit = -3f;
 
     private Vector2 subjectRunVelocity;
     private Vector2 reversedSubjectRunVelocity;

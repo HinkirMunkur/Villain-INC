@@ -27,4 +27,5 @@ public class FallState : SubjectState
     }
     
     public override void GoPush(IContext<ESubjectState> context) { }
+    public override void GoFall(IContext<ESubjectState> context) { }
 }
