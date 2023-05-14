@@ -17,9 +17,5 @@ public class FeetTriggerHandler : MonoBehaviour
         {
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.JUMP);
         }
-        else
-        {
-            subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.FALL);
-        }
     }
 }

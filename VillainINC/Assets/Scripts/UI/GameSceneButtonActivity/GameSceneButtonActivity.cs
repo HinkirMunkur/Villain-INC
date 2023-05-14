@@ -1,34 +1,33 @@
-using UnityEngine.UI;
 using UnityEngine;
 using Munkur;
 
-[RequireComponent(typeof(Button))]
-public class GameSceneButtonActivity : MonoBehaviour
+public abstract class GameSceneButtonActivity : MonoBehaviour
 {
-    [SerializeField] private Button button;
-
+    [SerializeField] private Camera rayCamera;
+    [SerializeField] private LayerMask layer;
+    
     private void Awake()
-    {
-        MouseInputSystemManager.Instance.OnMouseLeftClicked += OnButtonClicked;
+    { 
+        MouseInputSystemManager.Instance.OnMouseLeftClicked += OnMouseLeftClicked;
     }
 
-    private void OnDestroy()
+    private void OnDestroy() 
     {
-        MouseInputSystemManager.Instance.OnMouseLeftClicked -= OnButtonClicked;
+        MouseInputSystemManager.Instance.OnMouseLeftClicked -= OnMouseLeftClicked;    
     }
 
-    public void DeactivateButton()
+    protected virtual void OnMouseLeftClicked(Vector2 delta)
     {
-        button.interactable = false;
-    }
+        Ray ray = rayCamera.ScreenPointToRay(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
 
-    public void ActivateButton()
-    {
-        button.interactable = true;
-    }
-
-    protected virtual void OnButtonClicked(Vector2 delta)
-    {
+        if (hit.collider != null && hit.collider.gameObject == gameObject)
+        {
+            Clicked();
+        }
         
     }
+
+    protected abstract void Clicked();
+
 }
