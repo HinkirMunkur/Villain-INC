@@ -11,6 +11,7 @@ public class FallState : SubjectState
     
     public override void GoRun(IContext<ESubjectState> context)
     {
+        subjectBasic.MovementBehaviour.ChangeVelocity(Vector2.zero);
         subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.LAND, OnAnimationFinished: () =>
         {
             base.GoRun(context);

@@ -7,7 +7,9 @@ public class JumpState : SubjectState
     public override void Do()
     {
         subjectBasic.MovementBehaviour.JumpSubject();
-        subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.JUMP);
+        subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.JUMP, OnAnimationFinished: () => {
+            subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.FALL);
+        });
     }
     
     public override void GoRun(IContext<ESubjectState> context) { }
