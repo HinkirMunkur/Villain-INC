@@ -5,9 +5,21 @@ using UnityEngine;
 
 public class MovementBehaviour : MonoBehaviour
 {
+    [SerializeField] private SubjectBasic subjectBasic;
     [SerializeField] private Rigidbody2D subjectRigidbody2D;
+    public Rigidbody2D SubjectRigidbody2D => subjectRigidbody2D;
     [SerializeField] private float runSpeed;
     [SerializeField] private float pushSpeed;
+
+    [SerializeField] private bool isInAir;
+    public bool IsInAir 
+    {
+        get { return isInAir; }
+        set { isInAir = value; }
+    }
+
+    private float _fallSpeed;
+    private float _landLimit = -4f;
 
     private Vector2 subjectRunVelocity;
     private Vector2 reversedSubjectRunVelocity;
@@ -53,4 +65,22 @@ public class MovementBehaviour : MonoBehaviour
         subjectTrambolineForceEffect = subjectForce;
     }
     
+    public IEnumerator FindFallSpeed() 
+    {
+        while (isInAir) 
+        {
+            if (subjectRigidbody2D.velocity.y < _fallSpeed) 
+            {
+                _fallSpeed = subjectRigidbody2D.velocity.y;
+            }
+
+            if (_fallSpeed < _landLimit) 
+            {
+                subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.FALL);
+                yield break;
+            }
+
+            yield return null;
+        }
+    }
 }

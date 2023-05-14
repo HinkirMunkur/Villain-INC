@@ -9,4 +9,6 @@ public class RunState : SubjectState
         subjectBasic.MovementBehaviour.RunSubject();
         subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.RUN);
     }
+
+    public override void GoRun(IContext<ESubjectState> context) { }
 }

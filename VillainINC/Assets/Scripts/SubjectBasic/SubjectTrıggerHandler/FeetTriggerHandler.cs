@@ -9,17 +9,23 @@ public class FeetTriggerHandler : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag.Equals("Ground"))
+        if (col.CompareTag("Ground"))
         {
+            subjectBasic.MovementBehaviour.IsInAir = false;
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.RUN);
         }
-        else if (col.tag.Equals("Tramboline"))
+        else if (col.CompareTag("Tramboline"))
         {
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.JUMP);
         }
-        else
+    }
+
+    private void OnTriggerExit2D(Collider2D col) 
+    {
+        if (!col.CompareTag("Tramboline")) 
         {
-            subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.FALL);
+            subjectBasic.MovementBehaviour.IsInAir = true;
+            StartCoroutine(subjectBasic.MovementBehaviour.FindFallSpeed());
         }
     }
 }
