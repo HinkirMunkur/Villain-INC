@@ -159,7 +159,7 @@ public class TextEffectsController : Singletonn<TextEffectsController>
         for (int j = 0; j < TMP_PRO_VERTICES; j++)
         {
             var orig = verts[charInfo.vertexIndex + j];
-            verts[charInfo.vertexIndex + j] = orig + new Vector3(Mathf.Tan(Time.time * 2 + orig.x) * 0.01f * neg, Mathf.Tan(Time.time * 2 + orig.x) * 0.01f * neg, 0);
+            verts[charInfo.vertexIndex + j] = orig + new Vector3(Mathf.Tan(Time.time + orig.x) * 0.001f * neg, Mathf.Tan(Time.time + orig.x) * 0.001f * neg, 0);
         }
     }
 
