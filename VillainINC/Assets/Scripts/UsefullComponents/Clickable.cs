@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using Munkur;
 
+[RequireComponent(typeof(Collider2D))]
 public class Clickable : MonoBehaviour
 {
     [SerializeField] private Camera rayCamera;
@@ -9,7 +10,9 @@ public class Clickable : MonoBehaviour
     
     public Action OnClicked;
 
-    private RaycastHit2D ray;
+    private RaycastHit2D raycastHit2D;
+    private Ray ray;
+    
     private void Awake()
     { 
         MouseInputSystemManager.Instance.OnMouseLeftClicked += OnClick;
@@ -22,12 +25,10 @@ public class Clickable : MonoBehaviour
 
     public virtual void OnClick(Vector2 mousePosition) 
     {
-        ray = Physics2D.Raycast(rayCamera.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 
-            Mathf.Infinity, layer);
-        
-        Debug.DrawRay(rayCamera.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, Color.red);
-        
-        if (ray.collider != null && ray.collider.gameObject == gameObject) 
+        ray = rayCamera.ScreenPointToRay(Input.mousePosition);
+        raycastHit2D = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
+
+        if (raycastHit2D.collider != null && raycastHit2D.collider.gameObject == gameObject)
         {
             OnClicked?.Invoke();
         }

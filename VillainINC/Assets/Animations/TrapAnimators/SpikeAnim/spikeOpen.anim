@@ -20,19 +20,19 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1717384467, guid: b7796bc5622e03a4e8b2c64170f73a0e, type: 3}
+      value: {fileID: -1576246635, guid: d873e99e45931c042b0ad31d21d1228c, type: 3}
     - time: 0.125
-      value: {fileID: -2001719243, guid: b7796bc5622e03a4e8b2c64170f73a0e, type: 3}
+      value: {fileID: 497467979, guid: d873e99e45931c042b0ad31d21d1228c, type: 3}
     - time: 0.25
-      value: {fileID: 1883967247, guid: b7796bc5622e03a4e8b2c64170f73a0e, type: 3}
+      value: {fileID: 508607675, guid: d873e99e45931c042b0ad31d21d1228c, type: 3}
     - time: 0.375
-      value: {fileID: -1863237420, guid: b7796bc5622e03a4e8b2c64170f73a0e, type: 3}
+      value: {fileID: 66902413, guid: d873e99e45931c042b0ad31d21d1228c, type: 3}
     - time: 0.5
-      value: {fileID: 1883967247, guid: b7796bc5622e03a4e8b2c64170f73a0e, type: 3}
+      value: {fileID: 508607675, guid: d873e99e45931c042b0ad31d21d1228c, type: 3}
     - time: 0.625
-      value: {fileID: -2001719243, guid: b7796bc5622e03a4e8b2c64170f73a0e, type: 3}
+      value: {fileID: 497467979, guid: d873e99e45931c042b0ad31d21d1228c, type: 3}
     - time: 0.75
-      value: {fileID: -1717384467, guid: b7796bc5622e03a4e8b2c64170f73a0e, type: 3}
+      value: {fileID: -1576246635, guid: d873e99e45931c042b0ad31d21d1228c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -52,13 +52,13 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1717384467, guid: b7796bc5622e03a4e8b2c64170f73a0e, type: 3}
-    - {fileID: -2001719243, guid: b7796bc5622e03a4e8b2c64170f73a0e, type: 3}
-    - {fileID: 1883967247, guid: b7796bc5622e03a4e8b2c64170f73a0e, type: 3}
-    - {fileID: -1863237420, guid: b7796bc5622e03a4e8b2c64170f73a0e, type: 3}
-    - {fileID: 1883967247, guid: b7796bc5622e03a4e8b2c64170f73a0e, type: 3}
-    - {fileID: -2001719243, guid: b7796bc5622e03a4e8b2c64170f73a0e, type: 3}
-    - {fileID: -1717384467, guid: b7796bc5622e03a4e8b2c64170f73a0e, type: 3}
+    - {fileID: -1576246635, guid: d873e99e45931c042b0ad31d21d1228c, type: 3}
+    - {fileID: 497467979, guid: d873e99e45931c042b0ad31d21d1228c, type: 3}
+    - {fileID: 508607675, guid: d873e99e45931c042b0ad31d21d1228c, type: 3}
+    - {fileID: 66902413, guid: d873e99e45931c042b0ad31d21d1228c, type: 3}
+    - {fileID: 508607675, guid: d873e99e45931c042b0ad31d21d1228c, type: 3}
+    - {fileID: 497467979, guid: d873e99e45931c042b0ad31d21d1228c, type: 3}
+    - {fileID: -1576246635, guid: d873e99e45931c042b0ad31d21d1228c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -83,11 +83,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.75
-    functionName: CloseSpikes
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

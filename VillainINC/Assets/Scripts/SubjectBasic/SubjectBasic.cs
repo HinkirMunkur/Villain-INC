@@ -14,4 +14,7 @@ public class SubjectBasic : MonoBehaviour
 
     [SerializeField] private SubjectStateMachineController subjectStateMachineController;
     public SubjectStateMachineController SubjectStateMachineController => subjectStateMachineController;
+
+    [SerializeField] private SubjectDieBehaviour subjectDieBehaviour;
+    public SubjectDieBehaviour SubjectDieBehaviour => subjectDieBehaviour;
 }

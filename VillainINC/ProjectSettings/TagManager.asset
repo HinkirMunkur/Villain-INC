@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - Tramboline
   - Portal
+  - Head
+  - Wall
   layers:
   - Default
   - TransparentFX

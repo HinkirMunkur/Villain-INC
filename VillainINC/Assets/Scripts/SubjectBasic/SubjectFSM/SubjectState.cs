@@ -4,6 +4,7 @@ public abstract class SubjectState : State
 {
     [SerializeField] protected SubjectBasic subjectBasic;
 
+    public virtual void GoNone(IContext<ESubjectState> context) { context.SetState(ESubjectState.NONE); }
     public virtual void GoIdle(IContext<ESubjectState> context) { context.SetState(ESubjectState.IDLE); }
     public virtual void GoRun(IContext<ESubjectState> context) { context.SetState(ESubjectState.RUN); }
     public virtual void GoFall(IContext<ESubjectState> context) { context.SetState(ESubjectState.FALL); }

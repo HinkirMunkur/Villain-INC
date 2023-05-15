@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FeetTriggerHandler : MonoBehaviour
@@ -17,7 +14,6 @@ public class FeetTriggerHandler : MonoBehaviour
         {
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.JUMP);
         }
-
     }
 
     private void OnTriggerExit2D(Collider2D col) 

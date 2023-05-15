@@ -39,9 +39,11 @@ namespace Munkur
         }
 
         private void Do() => currentState.Do();
+        private void Done() => currentState.Done();
 
         public void DoStateTransition(EState newEStates)
         {
+            Done();
             stateTransitionDictionary[newEStates]?.Invoke();
         }
     

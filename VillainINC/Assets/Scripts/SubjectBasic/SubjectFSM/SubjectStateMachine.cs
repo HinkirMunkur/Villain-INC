@@ -6,6 +6,7 @@ using UnityEngine;
 
 public enum ESubjectState
 {
+    NONE,
     IDLE,
     RUN,
     FALL,
@@ -22,6 +23,7 @@ public class SubjectStateMachine : StateMachine<ESubjectState>
         base.Awake();
         stateTransitionDictionary = new Dictionary<ESubjectState, Action>()
         {
+            { ESubjectState.NONE, GoNone },
             { ESubjectState.IDLE, GoIdle },
             { ESubjectState.RUN, GoRun },
             { ESubjectState.FALL, GoFall },
@@ -35,6 +37,7 @@ public class SubjectStateMachine : StateMachine<ESubjectState>
         SetState(startEState);
     }
     
+    private void GoNone() => ((SubjectState)currentState).GoNone(this);
     private void GoIdle() => ((SubjectState)currentState).GoIdle(this);
     private void GoRun() => ((SubjectState)currentState).GoRun(this);
     private void GoFall() => ((SubjectState)currentState).GoFall(this);

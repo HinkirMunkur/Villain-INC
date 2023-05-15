@@ -1,6 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+public interface ISlayer
+{
+    public void Slay(SubjectBasic subjectBasic);
+}
 
 public abstract class TrapBasic : MonoBehaviour
 {
