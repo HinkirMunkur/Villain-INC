@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 8766921168559007105}
   m_Layer: 0
   m_Name: SubjectBasic
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -981,3 +981,4 @@ MonoBehaviour:
   subjectRigidbody2D: {fileID: 2478162064733915481}
   runSpeed: 1
   pushSpeed: 0.3
+  isInAir: 0
