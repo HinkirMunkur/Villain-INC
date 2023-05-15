@@ -30,7 +30,7 @@ public class MovementBehaviour : MonoBehaviour
     private Vector2 subjectPushItemVelocity;
     private Vector2 subjectTrambolineForceEffect;
     
-    private void Start()
+    private void Awake()
     {
         subjectRunVelocity = new Vector2(runSpeed, subjectRigidbody2D.velocity.y);
         subjectPushItemVelocity = new Vector2(pushSpeed, subjectRigidbody2D.velocity.y);

@@ -17,11 +17,13 @@ public class FeetTriggerHandler : MonoBehaviour
         {
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.JUMP);
         }
+
     }
 
     private void OnTriggerExit2D(Collider2D col) 
     {
         subjectBasic.MovementBehaviour.IsInAir = true;
         StartCoroutine(subjectBasic.MovementBehaviour.FindFallSpeed());
+
     }
 }
