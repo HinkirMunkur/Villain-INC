@@ -9,14 +9,14 @@ public class HandTriggerHandler : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag.Equals("Box"))
+        if (col.CompareTag("Box"))
         {
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.PUSH);
         }
-        else
-        {
-            subjectBasic.transform.Rotate(0, 180, 0);
-            subjectBasic.MovementBehaviour.RotateSubject();
-        }
+        // else if (col.CompareTag("Untagged"))
+        // {
+        //     subjectBasic.transform.Rotate(0, 180, 0);
+        //     subjectBasic.MovementBehaviour.RotateSubject();
+        // }
     }
 }
