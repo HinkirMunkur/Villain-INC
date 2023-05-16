@@ -10,4 +10,9 @@ public class SubjectStateMachineController : MonoBehaviour
     {
         subjectStateMachine.DoStateTransition(subjectState);
     }
+
+    public ESubjectState GetCurrentState()
+    {
+        return subjectStateMachine.ECurrState;
+    }
 }

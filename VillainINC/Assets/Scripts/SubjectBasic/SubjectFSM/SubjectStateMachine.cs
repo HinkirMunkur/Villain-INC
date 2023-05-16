@@ -37,12 +37,12 @@ public class SubjectStateMachine : StateMachine<ESubjectState>
         SetState(startEState);
     }
     
-    private void GoNone() => ((SubjectState)currentState).GoNone(this);
-    private void GoIdle() => ((SubjectState)currentState).GoIdle(this);
-    private void GoRun() => ((SubjectState)currentState).GoRun(this);
-    private void GoFall() => ((SubjectState)currentState).GoFall(this);
-    private void GoJump() => ((SubjectState)currentState).GoJump(this);
-    private void GoPush() => ((SubjectState)currentState).GoPush(this);
+    private void GoNone() => ((SubjectState)currState).GoNone(this);
+    private void GoIdle() => ((SubjectState)currState).GoIdle(this);
+    private void GoRun() => ((SubjectState)currState).GoRun(this);
+    private void GoFall() => ((SubjectState)currState).GoFall(this);
+    private void GoJump() => ((SubjectState)currState).GoJump(this);
+    private void GoPush() => ((SubjectState)currState).GoPush(this);
 
 
 }

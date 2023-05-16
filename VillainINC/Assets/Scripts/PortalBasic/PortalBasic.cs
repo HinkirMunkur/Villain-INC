@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PortalBasic : MonoBehaviour
+public class PortalBasic : MonoBehaviour, IAmBasic
 {
     [SerializeField] private TeleportBehaviour _teleportBehaviour;
     public TeleportBehaviour TeleportBehaviour => _teleportBehaviour;

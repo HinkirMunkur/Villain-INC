@@ -1,10 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Munkur;
 using UnityEngine;
 
-public class SubjectBasic : MonoBehaviour
+public class SubjectBasic : MonoBehaviour, IAmBasic
 {
     [SerializeField] private MovementBehaviour movementBehaviour;
     public MovementBehaviour MovementBehaviour => movementBehaviour;

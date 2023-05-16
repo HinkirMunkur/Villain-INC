@@ -13,7 +13,7 @@ public class PushState : SubjectState
 
     public override void Do()
     {
-        subjectBasic.MovementBehaviour.PushItemSubject();
+        subjectBasic.MovementBehaviour.PushSteady();
         subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.PUSH);
 
         StartCoroutine(PushTimeUntilRelease());

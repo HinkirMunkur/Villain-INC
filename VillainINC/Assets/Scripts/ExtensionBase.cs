@@ -14,6 +14,21 @@ public static class ExtensionBase
         }
     }
 
+    public static Transform GetBasic(this Transform transform)
+    {
+        while (transform.parent != null)
+        {
+            if (transform.GetComponent<IAmBasic>() != null)
+            {
+                return transform;
+            }
+            
+            transform.SetParent(transform.parent);
+        }
+
+        return null;
+    }
+
     public static void PlayAndCheckAnimationFinish(this MonoBehaviour monoBehaviour, Animator animator, String animationName,
         Action OnAnimationFinished)
     {

@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   subjectBasic: {fileID: 2478162064733915462}
-  pushTime: 3
+  pushTime: 1
 --- !u!1 &6957842318146830363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,10 +1056,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   subjectBasic: {fileID: 2478162064733915462}
-  subjectRigidbody2D: {fileID: 2478162064733915481}
   runSpeed: 1
   pushSpeed: 0.3
-  isInAir: 0
+  subjectRigidbody2D: {fileID: 2478162064733915481}
 --- !u!1 &8377119141643875600
 GameObject:
   m_ObjectHideFlags: 0

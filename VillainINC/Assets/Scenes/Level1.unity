@@ -1162,11 +1162,11 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.1
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 1019d27bf6b16044f80717fb9e767ecb, type: 2}
+  m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -1961,6 +1961,10 @@ PrefabInstance:
     - target: {fileID: 2478162064733915463, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
       propertyPath: m_Name
       value: SubjectBasic
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915481, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
       propertyPath: currentAnimationType

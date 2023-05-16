@@ -6,9 +6,7 @@ public class RunState : SubjectState
 {
     public override void Do()
     {
-        subjectBasic.MovementBehaviour.IsInAir = false;
-        subjectBasic.MovementBehaviour.FallSpeed = 0;
-        subjectBasic.MovementBehaviour.RunSubject();
+        subjectBasic.MovementBehaviour.RunSteady();
         subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.RUN);
     }
 

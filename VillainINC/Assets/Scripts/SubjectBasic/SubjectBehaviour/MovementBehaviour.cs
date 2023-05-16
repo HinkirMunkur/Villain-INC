@@ -5,25 +5,27 @@ using System;
 public class MovementBehaviour : MonoBehaviour
 {
     [SerializeField] private SubjectBasic subjectBasic;
-    [SerializeField] private Rigidbody2D subjectRigidbody2D;
-    public Rigidbody2D SubjectRigidbody2D => subjectRigidbody2D;
-    
+
     [SerializeField] private float runSpeed;
     [SerializeField] private float pushSpeed;
+    
+    [SerializeField] private Rigidbody2D subjectRigidbody2D;
+    public Rigidbody2D SubjectRigidbody2D => subjectRigidbody2D;
 
-    [SerializeField] private bool isInAir;
-    public bool IsInAir 
+    private bool isInAir;
+
+    public bool IsInAir
     {
         get { return isInAir; }
         set { isInAir = value; }
     }
-
-    private float _fallSpeed;
+    
+    private float fallSpeed;
     public float FallSpeed 
     {
-        set { _fallSpeed = value; }
+        set { fallSpeed = value; }
     }
-    private float _landLimit = -3f;
+    private float landLimit = -3f;
 
     private Vector2 subjectRunVelocity;
     private Vector2 subjectPushItemVelocity;
@@ -31,14 +33,37 @@ public class MovementBehaviour : MonoBehaviour
     
     private void Awake()
     {
-        subjectRunVelocity = new Vector2(runSpeed, subjectRigidbody2D.velocity.y);
-        subjectPushItemVelocity = new Vector2(pushSpeed, subjectRigidbody2D.velocity.y);
+        subjectRunVelocity = new Vector2(runSpeed, 0);
+        subjectPushItemVelocity = new Vector2(pushSpeed, 0);
         subjectTrambolineForceEffect = new Vector2(Math.Sign(subjectRunVelocity.x) * 2, 4);
     }
 
-    private void FixedUpdate()
+    public void RunSteady()
     {
-        subjectRigidbody2D.velocity = new Vector2(runSpeed, subjectRigidbody2D.velocity.y);
+        StartCoroutine(RunSteadyRoutine());
+    }
+    
+    private IEnumerator RunSteadyRoutine()
+    {
+        while (subjectBasic.SubjectStateMachineController.GetCurrentState() == ESubjectState.RUN)
+        {
+            subjectRigidbody2D.velocity = subjectRunVelocity;
+            yield return null;
+        }
+    }
+
+    public void PushSteady()
+    {
+        StartCoroutine(PushSteadyRoutine());
+    }
+    
+    private IEnumerator PushSteadyRoutine()
+    {
+        while (subjectBasic.SubjectStateMachineController.GetCurrentState() == ESubjectState.PUSH)
+        {
+            subjectRigidbody2D.velocity = subjectPushItemVelocity;
+            yield return null;
+        }
     }
 
     public void ChangeVelocity(Vector2 subjectVelocity)
@@ -46,21 +71,11 @@ public class MovementBehaviour : MonoBehaviour
         subjectRigidbody2D.velocity = subjectVelocity;
     }
 
-    public void RunSubject()
-    {
-        subjectRigidbody2D.velocity = subjectRunVelocity;
-    }
-    
-    public void PushItemSubject()
-    {
-        subjectRigidbody2D.velocity = subjectPushItemVelocity;
-    }
-    
     public void RotateSubject()
     {
         subjectRunVelocity = (Vector2.left + Vector2.up) * subjectRunVelocity;
+        subjectPushItemVelocity = (Vector2.left + Vector2.up) * subjectPushItemVelocity;
         subjectBasic.transform.Rotate(0, 180, 0);
-        subjectRigidbody2D.velocity = subjectRunVelocity;
     }
     
     public void JumpSubject()
@@ -78,12 +93,12 @@ public class MovementBehaviour : MonoBehaviour
     {
         while (isInAir) 
         {
-            if (subjectRigidbody2D.velocity.y < _fallSpeed) 
+            if (subjectRigidbody2D.velocity.y < fallSpeed) 
             {
-                _fallSpeed = subjectRigidbody2D.velocity.y;
+                fallSpeed = subjectRigidbody2D.velocity.y;
             }
 
-            if (_fallSpeed < _landLimit) 
+            if (fallSpeed < landLimit) 
             {
                 subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.FALL);
                 yield break;
