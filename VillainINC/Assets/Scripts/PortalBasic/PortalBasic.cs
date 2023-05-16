@@ -10,4 +10,6 @@ public class PortalBasic : MonoBehaviour, IAmBasic
     public PortalBasic OtherPortal => _otherPortal;
     [SerializeField] private Transform _teleportPoint;
     public Transform TeleportPoint => _teleportPoint;
+    [SerializeField] private Transform _teleportLaserRight;
+    public Transform TeleportLaserRight => _teleportLaserRight;
 }
