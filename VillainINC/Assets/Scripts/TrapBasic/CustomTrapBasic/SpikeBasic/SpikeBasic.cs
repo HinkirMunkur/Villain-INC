@@ -6,28 +6,22 @@ public class SpikeBasic : ClickableTrapBasic, ISlayer
     [SerializeField] private BoxCollider2D slayCollider;
 
     [SerializeField] private ESubjectAnimation eSubjectAnimation;
-    
-    private bool isUsed = false;
-    
+
     public void Slay(SubjectBasic subjectBasic)
     {
         subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.NONE);
         subjectBasic.SubjectAnimationController.PlayAnimation(eSubjectAnimation, OnAnimationFinished: () =>
         {
-            subjectBasic.SubjectDieBehaviour.PlayerDie();
+            subjectBasic.SubjectDieBehaviour.SubjectDie();
         });
     }
 
     public override void TrapClicked()
     {
-        if (!isUsed)
+        slayCollider.enabled = true;
+        this.PlayAndCheckAnimationFinish(animator, "Do", () =>
         {
-            isUsed = true;
-            slayCollider.enabled = true;
-            this.PlayAndCheckAnimationFinish(animator, "Do", () =>
-            {
-                slayCollider.enabled = false;
-            });
-        }
+            slayCollider.enabled = false;
+        });
     }
 }

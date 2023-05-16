@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 210239016}
   - component: {fileID: 6318377582740780650}
   - component: {fileID: 7687676840591643688}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FeetTriggerHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 817846091}
   - component: {fileID: 4418682115883326955}
   - component: {fileID: 2763602488612330755}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HandTriggerHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2321601712393145624}
   - component: {fileID: 684556739661959366}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FSM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1329706957242208007}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particle_H
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2478162064518472105}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Visual_H
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 2478162064733915462}
   - component: {fileID: 2478162064733915481}
   - component: {fileID: 8766921168559007105}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SubjectBasic
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2478162065139645158}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Behaviour_SH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2478162065700271194}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TriggerHandler_SH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -437,7 +437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2478162066054988861}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Controller_SH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,7 +469,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2478162066058821201}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Manager_SH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,7 +501,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3960582706681830753}
   - component: {fileID: 3960582706681830752}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: IdleState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -547,7 +547,7 @@ GameObject:
   - component: {fileID: 5876207109207372973}
   - component: {fileID: 1079882070507400485}
   - component: {fileID: 8974630418834610295}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HeadTriggerHandler
   m_TagString: Head
   m_Icon: {fileID: 0}
@@ -616,7 +616,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3282077857110235327}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: States_SH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -654,7 +654,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3150285434639228446}
   - component: {fileID: 3150285434639228433}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FSMController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -699,7 +699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6957842316955125294}
   - component: {fileID: 6957842316955125281}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FallState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -744,7 +744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6957842317296400794}
   - component: {fileID: 6957842317296400797}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: JumpState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 6957842317389420563}
   - component: {fileID: 6957842317389420560}
   - component: {fileID: 4207805422041648540}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AnimationController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -930,7 +930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6957842317748133115}
   - component: {fileID: 6957842317748133114}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RunState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -975,7 +975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6957842317988791846}
   - component: {fileID: 6957842317988791865}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PushState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1021,7 +1021,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6957842318146830362}
   - component: {fileID: 6957842318146830365}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MovementBehaviour
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1069,7 +1069,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5737047760256633516}
   - component: {fileID: 5051011076439607102}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: NoneState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1114,7 +1114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3264012172890533718}
   - component: {fileID: 749670623969412260}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SubjectDieBehaviour
   m_TagString: Untagged
   m_Icon: {fileID: 0}

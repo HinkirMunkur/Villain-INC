@@ -12,11 +12,16 @@ public class TrapClickTriggerHandler : MonoBehaviour
 
     private void OnDestroy()
     {
-        clickable.OnClicked += OnClicked;
+        clickable.OnClicked -= OnClicked;
     }
 
     private void OnClicked()
     {
         clickableTrapBasic.TrapClicked();
+        
+        if (clickable.OneTime)
+        {
+            clickable.OnClicked -= OnClicked;
+        }
     }
 }

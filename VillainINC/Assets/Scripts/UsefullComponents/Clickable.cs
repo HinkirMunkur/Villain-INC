@@ -7,6 +7,10 @@ public class Clickable : MonoBehaviour
 {
     [SerializeField] private Camera rayCamera;
     [SerializeField] private LayerMask layer;
+
+    [SerializeField] private bool oneTime;
+    
+    public bool OneTime => oneTime;
     
     public Action OnClicked;
 
@@ -26,11 +30,16 @@ public class Clickable : MonoBehaviour
     public virtual void OnClick(Vector2 mousePosition) 
     {
         ray = rayCamera.ScreenPointToRay(Input.mousePosition);
-        raycastHit2D = Physics2D.GetRayIntersection(ray, Mathf.Infinity);
+        raycastHit2D = Physics2D.GetRayIntersection(ray, Mathf.Infinity, layer);
 
         if (raycastHit2D.collider != null && raycastHit2D.collider.gameObject == gameObject)
         {
             OnClicked?.Invoke();
+
+            if (oneTime)
+            {
+                MouseInputSystemManager.Instance.OnMouseLeftClicked -= OnClick; 
+            }
         }
     }
 }
