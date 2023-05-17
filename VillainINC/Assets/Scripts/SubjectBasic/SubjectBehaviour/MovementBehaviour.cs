@@ -47,7 +47,7 @@ public class MovementBehaviour : MonoBehaviour
     {
         while (subjectBasic.SubjectStateMachineController.GetCurrentState() == ESubjectState.RUN)
         {
-            subjectRigidbody2D.velocity = subjectRunVelocity;
+            subjectRigidbody2D.velocity = (subjectRigidbody2D.velocity * Vector2.up) + subjectRunVelocity;
             yield return null;
         }
     }
@@ -61,7 +61,7 @@ public class MovementBehaviour : MonoBehaviour
     {
         while (subjectBasic.SubjectStateMachineController.GetCurrentState() == ESubjectState.PUSH)
         {
-            subjectRigidbody2D.velocity = subjectPushItemVelocity;
+            subjectRigidbody2D.velocity = (subjectRigidbody2D.velocity * Vector2.up) + subjectPushItemVelocity;
             yield return null;
         }
     }

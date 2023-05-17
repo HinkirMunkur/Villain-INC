@@ -876,7 +876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2297112075470404783, guid: 65bdb9a686f92c8429d9a1f3993ea21e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2297112075470404783, guid: 65bdb9a686f92c8429d9a1f3993ea21e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -909,6 +909,10 @@ PrefabInstance:
     - target: {fileID: 2297112075470404783, guid: 65bdb9a686f92c8429d9a1f3993ea21e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3728748504764966080, guid: 65bdb9a686f92c8429d9a1f3993ea21e, type: 3}
+      propertyPath: _alwaysShoot
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7876598242636346608, guid: 65bdb9a686f92c8429d9a1f3993ea21e, type: 3}
       propertyPath: rayCamera

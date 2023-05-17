@@ -10,9 +10,16 @@ public class LaserBehaviour : MonoBehaviour
     [SerializeField] private Transform _laserFirePoint;
     [SerializeField] private LineRenderer _laserLineRenderer;
     
+    
     private void Awake() 
     {
         _laserBasic.LaserClick.OnClicked += ShootLaserCoroutine;    
+
+        if (_laserBasic.AlwaysShoot) 
+        {
+            _laserBasic.LaserClick.enabled = false;
+            ShootLaserCoroutine();
+        }
     }
 
     private void OnDestroy() 
@@ -27,7 +34,7 @@ public class LaserBehaviour : MonoBehaviour
     private IEnumerator ShootLaser()
     {
         float duration = 0;
-        while (duration < _laserDuration)
+        while (duration < _laserDuration || _laserBasic.AlwaysShoot)
         {
             Vector2 lastPointHit = transform.right;
             List<Vector2> vectors = new List<Vector2>();
