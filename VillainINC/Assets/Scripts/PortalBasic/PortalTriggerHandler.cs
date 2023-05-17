@@ -3,6 +3,7 @@ using UnityEngine;
 public class PortalTriggerHandler : MonoBehaviour
 {
     [SerializeField] private PortalBasic _portalBasic;
+    
     private bool _enteredFromThisPortal = false;
     public bool EnteredFromThisPortal
     {

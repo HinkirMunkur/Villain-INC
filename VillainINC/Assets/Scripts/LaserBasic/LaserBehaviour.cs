@@ -1,6 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
+using System;
 
 public class LaserBehaviour : MonoBehaviour
 {
@@ -9,31 +10,30 @@ public class LaserBehaviour : MonoBehaviour
     [SerializeField] private float _laserDuration = 3f;
     [SerializeField] private Transform _laserFirePoint;
     [SerializeField] private LineRenderer _laserLineRenderer;
-    
-    
-    private void Awake() 
-    {
-        _laserBasic.LaserClick.OnClicked += ShootLaserCoroutine;    
 
+    private bool isLaserShotFinished = true;
+    
+    private void Start() 
+    {
         if (_laserBasic.AlwaysShoot) 
         {
             _laserBasic.LaserClick.enabled = false;
-            ShootLaserCoroutine();
+            StartCoroutine(ShootLaser());
         }
     }
-
-    private void OnDestroy() 
+    
+    public void ShootLaserCoroutine()
     {
-        _laserBasic.LaserClick.OnClicked -= ShootLaserCoroutine;    
+        if (isLaserShotFinished)
+        {
+            isLaserShotFinished = false;
+            StartCoroutine(ShootLaser(() => isLaserShotFinished = true));
+        }
     }
-
-    private void ShootLaserCoroutine()
-    {
-        StartCoroutine(ShootLaser());
-    }
-    private IEnumerator ShootLaser()
+    private IEnumerator ShootLaser(Action OnLaserShotFinished = null)
     {
         float duration = 0;
+        
         while (duration < _laserDuration || _laserBasic.AlwaysShoot)
         {
             Vector2 lastPointHit = transform.right;
@@ -41,18 +41,25 @@ public class LaserBehaviour : MonoBehaviour
             vectors.Add(_laserFirePoint.position);
 
             RaycastHit2D hit = Physics2D.Raycast(_laserFirePoint.position, transform.right);
+            
             while (hit)
             {
                 vectors.Add(hit.point);
 
-                if (hit.collider.gameObject.CompareTag("Portal"))
+                if (hit.collider.CompareTag("Portal"))
                 {
+                    /*
                     PortalBasic portalBasic = hit.collider.gameObject.GetComponentInParent<PortalBasic>();
                     vectors.Add(portalBasic.OtherPortal.TeleportLaserRight.position);
                     lastPointHit = portalBasic.OtherPortal.TeleportLaserRight.position;
 
                     hit = Physics2D.Raycast(portalBasic.OtherPortal.TeleportLaserRight.position, transform.right);
-                    
+                    */
+                }
+                else if (hit.collider.CompareTag("Player"))
+                {
+                    _laserBasic.Slay(hit.transform.GetComponent<SubjectBasic>());
+                    break;
                 }
                 else 
                 {
@@ -75,6 +82,7 @@ public class LaserBehaviour : MonoBehaviour
         }
 
         Draw2DRay(Vector2.zero, Vector2.zero);   
+        OnLaserShotFinished?.Invoke();
     }
 
 
