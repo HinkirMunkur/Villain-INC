@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d873e99e45931c042b0ad31d21d1228c
+guid: a9ce2ce92a3e0724ebdf10dd4feb28d2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,89 +100,101 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dikenler_0
+      name: dikenler_new_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 0
-        width: 32
-        height: 16
+        width: 38
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b18cf09514cd4724cbd4c3457e53c26c
-      internalID: -1576246635
+      spriteID: 7571052e4b3e5d3408ea4d3b44f79afa
+      internalID: 1552499059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dikenler_1
+      name: dikenler_new_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 41
         y: 0
-        width: 32
-        height: 16
+        width: 38
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dec45d82b6d4454b975a9d466e65826
-      internalID: 497467979
+      spriteID: e931ca6af93d97d4ca0b08a1eff7d6b6
+      internalID: 972932779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dikenler_2
+      name: dikenler_new_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 79
         y: 0
-        width: 32
-        height: 16
+        width: 38
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 660911fec8830c74ba34bae866e06d34
-      internalID: 508607675
+      spriteID: 8773f368322344a45a8ddfa5a8b03c44
+      internalID: 2070459288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dikenler_3
+      name: dikenler_new_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 119
         y: 0
-        width: 32
-        height: 16
+        width: 38
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d2eac9607ac6ca4eb9bea19135ed69c
-      internalID: 66902413
+      spriteID: 4c578826c1c16234ca4ed129ddedea80
+      internalID: -1405118263
       vertices: []
       indices: 
       edges: []
@@ -198,10 +210,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dikenler_2: 508607675
-      dikenler_3: 66902413
-      dikenler_1: 497467979
-      dikenler_0: -1576246635
+      dikenler_new_1: 972932779
+      dikenler_new_2: 2070459288
+      dikenler_new_0: 1552499059
+      dikenler_new_3: -1405118263
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
