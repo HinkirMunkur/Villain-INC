@@ -9,11 +9,7 @@ public class SpikeBasic : ClickableTrapBasic, ISlayer
 
     public void Slay(SubjectBasic subjectBasic)
     {
-        subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.NONE);
-        subjectBasic.SubjectAnimationController.PlayAnimation(eSubjectAnimation, OnAnimationFinished: () =>
-        {
-            subjectBasic.SubjectDieBehaviour.SubjectDie();
-        });
+        subjectBasic.SubjectDieBehaviour.BeforeSubjectDie(eSubjectAnimation);
     }
 
     public override void TrapClicked()

@@ -13,4 +13,12 @@ public class SubjectBasic : MonoBehaviour, IAmBasic
 
     [SerializeField] private SubjectDieBehaviour subjectDieBehaviour;
     public SubjectDieBehaviour SubjectDieBehaviour => subjectDieBehaviour;
+
+    private SpawnPipeBasic spawnPipeBasic;
+
+    public SpawnPipeBasic SpawnPipeBasic => spawnPipeBasic;
+    public void Init(SpawnPipeBasic spawnPipeBasic)
+    {
+        this.spawnPipeBasic = spawnPipeBasic;
+    }
 }

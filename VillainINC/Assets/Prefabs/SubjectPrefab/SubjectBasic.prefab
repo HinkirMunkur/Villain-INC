@@ -1056,8 +1056,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   subjectBasic: {fileID: 2478162064733915462}
-  runSpeed: 1
-  pushSpeed: 0.6
+  runSpeed: 1.5
+  pushSpeed: 1.2
   subjectRigidbody2D: {fileID: 2478162064733915481}
 --- !u!1 &8377119141643875600
 GameObject:
@@ -1149,3 +1149,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   subjectBasic: {fileID: 2478162064733915462}
+  capsuleCollider2D: {fileID: 8766921168559007105}

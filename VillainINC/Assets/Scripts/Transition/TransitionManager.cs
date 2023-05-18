@@ -62,7 +62,7 @@ namespace Munkur
             endTransition.ExecuteCustomEndTransition(duration);
             
             yield return new WaitForSecondsRealtime(endTransition.
-                TransitionDuration+1);
+                TransitionDuration+2);
 
             if (sceneName != null)
             {

@@ -8,14 +8,7 @@ public class SpearBasic : TrapBasic, ISlayer
     [SerializeField] private BoxCollider2D spearBodyCollider2D;
     public void Slay(SubjectBasic subjectBasic)
     {
-        subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.NONE);
-        subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.DIE_SHOT, OnAnimationFinished: 
-            () =>
-        {
-            subjectBasic.SubjectDieBehaviour.SubjectDie();
-        });
-
-        ChangeLayerToSpear();
+        subjectBasic.SubjectDieBehaviour.BeforeSubjectDie(ESubjectAnimation.DIE_SHOT);
     }
 
     public IEnumerator AddForceUntilCrush(Vector2 spearForce)
@@ -25,11 +18,6 @@ public class SpearBasic : TrapBasic, ISlayer
             AddForeToSpear(spearForce);
             yield return null;
         }
-    }
-
-    public void ChangeLayerToSpear()
-    {
-        spearBodyCollider2D.gameObject.layer = LayerMask.NameToLayer("Spear");
     }
 
     public void SetSpearStatic()

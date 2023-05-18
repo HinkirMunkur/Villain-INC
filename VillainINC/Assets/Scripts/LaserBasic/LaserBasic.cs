@@ -12,12 +12,7 @@ public class LaserBasic : ClickableTrapBasic, ISlayer
     
     public void Slay(SubjectBasic subjectBasic)
     {
-        subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.NONE);
-        subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.DIE_SHOT, 
-            OnAnimationFinished: () =>
-            {
-                subjectBasic.SubjectDieBehaviour.SubjectDie();
-            });
+        subjectBasic.SubjectDieBehaviour.BeforeSubjectDie(ESubjectAnimation.DIE_SHOT);
     }
     public override void TrapClicked()
     {
