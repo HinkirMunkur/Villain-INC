@@ -4,7 +4,7 @@ using UnityEngine;
 public class SpearBasic : TrapBasic, ISlayer
 {
     [SerializeField] private Rigidbody2D spearRigidbody2D;
-    [SerializeField] private BoxCollider2D spearSlayCollider2D;
+    [SerializeField] private CapsuleCollider2D spearSlayCollider2D;
     [SerializeField] private BoxCollider2D spearBodyCollider2D;
     public void Slay(SubjectBasic subjectBasic)
     {
