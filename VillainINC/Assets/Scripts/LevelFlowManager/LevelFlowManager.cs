@@ -6,8 +6,7 @@ public class LevelFlowManager : Singletonn<LevelFlowManager>
 {
     [SerializeField] private Executer executer;
     [SerializeField] private Transform priorityHolder;
-    [SerializeField] private string nextSceneName;
-    
+
     public Action OnStartGame;
 
     private void Start()
@@ -26,7 +25,8 @@ public class LevelFlowManager : Singletonn<LevelFlowManager>
         {
             if (result)
             {
-                TransitionManager.Instance.EndSceneTransition(nextSceneName);
+                TransitionManager.Instance.EndSceneTransition(LevelController.Instance
+                    .GetSceneNameWithIndex(LevelController.Instance.GetCurrentLevelIndex()+1));
             }
         });
     }

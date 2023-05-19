@@ -1,5 +1,5 @@
 using System;
-using UnityEditor;
+//using UnityEditor;
 using UnityEngine;
 
 public class CameraMovementWithAccelerometer : MonoBehaviour
@@ -16,7 +16,8 @@ public class CameraMovementWithAccelerometer : MonoBehaviour
     {
         Input.gyro.enabled = true;
     }
-
+    
+    /*
     private void LateUpdate()
     {
         var gyroVector = Input.gyro.rotationRateUnbiased;
@@ -46,4 +47,5 @@ public class CameraMovementWithAccelerometer : MonoBehaviour
         }
         
     }
+    */
 }

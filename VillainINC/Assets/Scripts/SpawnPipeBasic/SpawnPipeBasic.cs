@@ -15,7 +15,10 @@ public class SpawnPipeBasic : MonoBehaviour
 
     private void OnDestroy()
     {
-        LevelFlowManager.Instance.OnStartGame -= OnStartGame;
+        if (LevelFlowManager.Instance != null)
+        {
+            LevelFlowManager.Instance.OnStartGame -= OnStartGame;
+        }
     }
 
     private void OnStartGame()
