@@ -6,7 +6,7 @@ public class FeetTriggerHandler : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Ground"))
+        if (col.CompareTag("Ground") || col.CompareTag("Box"))
         {
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.RUN);
         }
