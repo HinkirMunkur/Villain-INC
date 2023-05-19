@@ -1,13 +1,23 @@
 using UnityEngine;
-using DG.Tweening;
 
 public class MunkurTextController : MonoBehaviour
 {
-    [SerializeField] private Vector3 lastScalePos;
-    [SerializeField] private float scaleDuration;
-
-    public void ScaleText()
+    [SerializeField] private Transform lastPos;
+    [SerializeField] private SubjectBasic subjectBasic;
+    
+    private bool oneTime = false;
+    
+    private void Start()
     {
-        transform.DOScale(lastScalePos, scaleDuration);
+        subjectBasic.MovementBehaviour.RotateSubject();
+    }
+
+    private void Update()
+    {
+        if (!oneTime && (transform.position.x < lastPos.transform.position.x))
+        {
+            subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.IDLE);
+            subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.NONE);
+        }
     }
 }

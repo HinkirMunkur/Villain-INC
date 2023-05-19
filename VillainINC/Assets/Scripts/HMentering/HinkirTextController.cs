@@ -1,49 +1,29 @@
 using System.Collections;
-using UnityEngine;
-using DG.Tweening;
 using Munkur;
+using UnityEngine;
 
 public class HinkirTextController : MonoBehaviour
 {
-    [SerializeField] private Transform lastTransform;
-    [SerializeField] private float moveDuration;
-    
-    [SerializeField] private float shakeDuration;
-    [SerializeField] private float strength;
-    [SerializeField] private int vibrato;
+    [SerializeField] private Transform lastPos;
+    [SerializeField] private SubjectBasic subjectBasic;
 
-    [SerializeField] private Vector3 lastScalePos;
-    [SerializeField] private float scaleDuration;
+    private bool oneTime = false;
 
-    [SerializeField] private float waitDurationBeforeScale;
-
-    [SerializeField] private MunkurTextController munkurTextController;
-    private void Start()
+    private void Update()
     {
-        transform.DOMove(lastTransform.position, moveDuration).SetEase(Ease.InExpo);
-        transform.DOShakeRotation(shakeDuration, strength, vibrato).OnComplete(() =>
+        if (!oneTime && (transform.position.x > lastPos.transform.position.x))
         {
-            StartCoroutine(WaitAndScale());
-        });
+            oneTime = true;
+            subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.IDLE);
+            subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.NONE);
+            StartCoroutine(EndLevelRoutine());
+        }
     }
 
-    private IEnumerator WaitAndScale()
+    private IEnumerator EndLevelRoutine()
     {
-        yield return new WaitForSeconds(waitDurationBeforeScale);
-        ScaleText();
-        munkurTextController.ScaleText();
-    }
-
-    public void ScaleText()
-    {
-        transform.DOScale(lastScalePos, scaleDuration);
-        StartCoroutine(WaitAndTranslateLevel());
-    }
-    
-    private IEnumerator WaitAndTranslateLevel()
-    {
-        yield return new WaitForSeconds(scaleDuration-3);
-        TransitionManager.Instance.EndSceneTransition(LevelController.Instance
-            .GetSceneNameWithIndex(LevelController.Instance.GetCurrentLevelIndex()+1));
+        yield return new WaitForSeconds(1f);
+        TransitionManager.Instance.EndSceneTransition(LevelController.Instance.GetSceneNameWithIndex
+            (LevelController.Instance.GetCurrentLevelIndex()+1));
     }
 }
