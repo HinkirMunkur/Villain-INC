@@ -9,7 +9,11 @@ public class LaserBehaviour : MonoBehaviour
     [SerializeField] private float _laserDuration = 3f;
     [SerializeField] private Transform _laserFirePoint;
     [SerializeField] private LineRenderer _laserLineRenderer;
-
+    //[SerializeField] private ParticleSystem _laserStartParticleSystem;
+    //[SerializeField] private GameObject _laserEndParticleSystem;
+    [SerializeField] private ParticleSystem _laserBigParticleSystem;
+    [SerializeField] private ParticleSystem _laserSmallParticleSystem;
+    
     [SerializeField] private LayerMask laserHitLayer;
 
     private bool isLaserShotFinished = true;
@@ -45,11 +49,19 @@ public class LaserBehaviour : MonoBehaviour
                 {
                     _laserBasic.Slay(hit.transform.GetComponent<SubjectBasic>());
                 }
-                
+
+                _laserBigParticleSystem.transform.position = hit.point;
+                _laserBigParticleSystem.Play();
+                _laserSmallParticleSystem.transform.position = hit.point;
+                _laserSmallParticleSystem.Play();
                 Draw2DRay(_laserFirePoint.position, hit.point);
             }
             else 
             {
+                _laserBigParticleSystem.transform.position = hit.point;
+                _laserBigParticleSystem.Play();
+                _laserSmallParticleSystem.transform.position = hit.point;
+                _laserSmallParticleSystem.Play();
                 Draw2DRay(_laserFirePoint.position, _laserFirePoint.position + transform.right * _rayDistance);
             }
 
