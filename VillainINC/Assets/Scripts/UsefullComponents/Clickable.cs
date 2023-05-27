@@ -31,9 +31,14 @@ public class Clickable : MonoBehaviour
     {
         ray = rayCamera.ScreenPointToRay(Input.mousePosition);
         raycastHit2D = Physics2D.GetRayIntersection(ray, Mathf.Infinity, layer);
-
+        
         if (raycastHit2D.collider != null && raycastHit2D.collider.gameObject == gameObject)
         {
+            if (StaticUtilitiesBase.IsPointerOverUIObject())
+            {
+                return;
+            }
+
             OnClicked?.Invoke();
 
             if (oneTime)

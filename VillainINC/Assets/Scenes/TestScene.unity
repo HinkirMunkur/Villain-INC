@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SwitchBasic
       objectReference: {fileID: 0}
+    - target: {fileID: 6659389088091943532, guid: ec1b3b2f0b838d64eab1a089a2327f8d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6659389088091943533, guid: ec1b3b2f0b838d64eab1a089a2327f8d, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -323,6 +327,10 @@ PrefabInstance:
     - target: {fileID: 9033295131870077908, guid: a7d1411fbbf851d469bff1d57a453cc2, type: 3}
       propertyPath: m_Name
       value: AutomatedDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 9033295131870077908, guid: a7d1411fbbf851d469bff1d57a453cc2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9033295131870077911, guid: a7d1411fbbf851d469bff1d57a453cc2, type: 3}
       propertyPath: m_RootOrder
@@ -821,10 +829,6 @@ PrefabInstance:
     - target: {fileID: 2297112075470404783, guid: 65bdb9a686f92c8429d9a1f3993ea21e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3728748504764966080, guid: 65bdb9a686f92c8429d9a1f3993ea21e, type: 3}
-      propertyPath: alwaysShoot
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65bdb9a686f92c8429d9a1f3993ea21e, type: 3}
