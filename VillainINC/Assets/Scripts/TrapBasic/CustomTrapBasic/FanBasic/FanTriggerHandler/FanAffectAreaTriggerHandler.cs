@@ -5,29 +5,24 @@ public class FanAffectAreaTriggerHandler : MonoBehaviour
 {
     [SerializeField] private FanBasic fanBasic;
 
-    private bool isPlayerInFanArea = false;
+    private bool isObjectInFanArea = false;
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player"))
-        {
-            isPlayerInFanArea = true;
-            StartCoroutine(AddForceCont(col.GetComponent<SubjectBasic>()));
-        }
+        
+        isObjectInFanArea = true;
+        StartCoroutine(AddForceCont(col.attachedRigidbody));
     }
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.CompareTag("Player"))
-        {
-            isPlayerInFanArea = false;
-        }
+        isObjectInFanArea = false;
     }
 
-    private IEnumerator AddForceCont(SubjectBasic subjectBasic)
+    private IEnumerator AddForceCont(Rigidbody2D objectRigidbody)
     {
-        while (isPlayerInFanArea)
+        while (isObjectInFanArea)
         {
-            subjectBasic.MovementBehaviour.AddForceToPlayer(fanBasic.FanForceVector);
+            objectRigidbody.AddForce(fanBasic.FanForceVector);
             yield return null;
         }
     }

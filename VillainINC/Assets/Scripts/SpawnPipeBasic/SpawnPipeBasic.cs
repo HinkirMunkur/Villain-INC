@@ -30,7 +30,7 @@ public class SpawnPipeBasic : MonoBehaviour
     {
         if (totalSpawnAmount > 0)
         {
-            SubjectBasic spawnedSubjectBasic = Instantiate(subjectBasicPrefab, spawnPoint);
+            SubjectBasic spawnedSubjectBasic = Instantiate(subjectBasicPrefab, spawnPoint.position, Quaternion.identity);
             spawnedSubjectBasic.Init(this);
             totalSpawnAmount--;
         }

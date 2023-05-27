@@ -10,6 +10,8 @@ TagManager:
   - Portal
   - Head
   - Wall
+  - PushBox
+  - Spear
   layers:
   - Default
   - TransparentFX

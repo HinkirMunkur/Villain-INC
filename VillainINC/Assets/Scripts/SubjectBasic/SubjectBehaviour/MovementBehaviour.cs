@@ -83,11 +83,6 @@ public class MovementBehaviour : MonoBehaviour
         subjectRigidbody2D.AddForce(subjectTrambolineForceEffect * 40);
         //subjectRigidbody2D.velocity = subjectTrambolineForceEffect;
     }
-
-    public void AddForceToPlayer(Vector2 forceVector)
-    {
-        subjectRigidbody2D.AddForce(forceVector);
-    }
     
     public void ChangeTrambolineEffect(Vector2 subjectForce)
     {

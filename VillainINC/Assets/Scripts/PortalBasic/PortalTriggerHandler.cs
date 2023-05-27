@@ -13,9 +13,9 @@ public class PortalTriggerHandler : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col) 
     {
-        if (!_portalBasic.OtherPortal.PortalTriggerHandler.EnteredFromThisPortal) 
+        if (col.CompareTag("Player") || col.CompareTag("PushBox") || col.CompareTag("Wall")) 
         {
-            if (col.CompareTag("Player")) 
+            if (!_portalBasic.OtherPortal.PortalTriggerHandler.EnteredFromThisPortal) 
             {
                 _enteredFromThisPortal = true;
                 _portalBasic.TeleportBehaviour.Teleport(col);
@@ -25,6 +25,9 @@ public class PortalTriggerHandler : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        _portalBasic.OtherPortal.PortalTriggerHandler.EnteredFromThisPortal = false;
+        if (col.CompareTag("Player") || col.CompareTag("PushBox") || col.CompareTag("Wall")) 
+        {
+            _portalBasic.OtherPortal.PortalTriggerHandler.EnteredFromThisPortal = false;
+        }
     }
 }
