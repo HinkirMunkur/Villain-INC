@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Cinemachine;
 
 public enum ECameraSystem
 {
@@ -33,7 +34,17 @@ namespace Munkur
             ICameraTransition cameraTransitionSystem = GetCameraSystem(eCameraSystem);
             cameraTransitionSystem.SetCamera(eCameraType);
         }
-    
+
+        public CinemachineVirtualCamera GetActiveVirtualCamera(ECameraSystem eCameraSystem)
+        {
+            return GetCameraSystem(eCameraSystem).GetActiveVirtualCamera().CinemachineVirtualCamera;
+        }
+
+        public Camera GetCameraSystemMainCamera(ECameraSystem eCameraSystem)
+        {
+            return cameraSystemDictionary[eCameraSystem].MainCamera;
+        }
+        
         private ICameraTransition GetCameraSystem(ECameraSystem eCameraSystem)
         {
             return cameraSystemDictionary[eCameraSystem];

@@ -24,18 +24,21 @@ THE SOFTWARE. */
 
 using System;
 using System.Collections;
+using Cinemachine;
+using Munkur;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 [RequireComponent (typeof (Camera))]
 public class ViewportHandler : MonoBehaviour
 {
     #region FIELDS
     public Color wireColor = Color.white;
-    public float UnitsSize = 1; // size of your scene in unity units
+    public float UnitSize = 1; // size of your scene in unity units
     public Constraint constraint = Constraint.Portrait;
     public static ViewportHandler Instance;
-    public new Camera camera;
+    public CinemachineVirtualCamera mainCamera;
 
     private float _width;
     private float _height;
@@ -116,27 +119,32 @@ public class ViewportHandler : MonoBehaviour
     #region METHODS
     private void Awake()
     {
-        camera = GetComponent<Camera>();
+        SetCamera(CameraaManager.Instance.GetActiveVirtualCamera(ECameraSystem.MainMenuCameraSystem));
         Instance = this;
         ComputeResolution();
     }
 
-    private void ComputeResolution()
+    public void SetCamera(CinemachineVirtualCamera cinemachineVirtualCamera)
+    {
+        mainCamera = cinemachineVirtualCamera;
+    }
+
+    public void ComputeResolution()
     {
         float leftX, rightX, topY, bottomY;
 
         if(constraint == Constraint.Landscape){
-            camera.orthographicSize = 1f / camera.aspect * UnitsSize / 2f;    
+            mainCamera.m_Lens.OrthographicSize = 1f / mainCamera.m_Lens.Aspect * UnitSize / 2f;    
         }else{
-            camera.orthographicSize = UnitsSize / 2f;
+            mainCamera.m_Lens.OrthographicSize = UnitSize / 2f;
         }
 
-        _height = 2f * camera.orthographicSize;
-        _width = _height * camera.aspect;
+        _height = 2f * mainCamera.m_Lens.OrthographicSize;
+        _width = _height * mainCamera.m_Lens.Aspect;
 
         float cameraX, cameraY;
-        cameraX = camera.transform.position.x;
-        cameraY = camera.transform.position.y;
+        cameraX = mainCamera.transform.position.x;
+        cameraY = mainCamera.transform.position.y;
 
         leftX = cameraX - _width / 2;
         rightX = cameraX + _width / 2;
@@ -163,21 +171,27 @@ public class ViewportHandler : MonoBehaviour
         ComputeResolution();
         #endif
     }
-
+    
+    /*
     void OnDrawGizmos() {
         Gizmos.color = wireColor;
 
         Matrix4x4 temp = Gizmos.matrix;
         Gizmos.matrix = Matrix4x4.TRS(transform.position, transform.rotation, Vector3.one);
-        if (camera.orthographic) {
-            float spread = camera.farClipPlane - camera.nearClipPlane;
-            float center = (camera.farClipPlane + camera.nearClipPlane)*0.5f;
-            Gizmos.DrawWireCube(new Vector3(0,0,center), new Vector3(camera.orthographicSize*2*camera.aspect, camera.orthographicSize*2, spread));
+        if (mainCamera.m_Lens.Orthographic) {
+            
+            float spread = mainCamera.m_Lens.FarClipPlane - mainCamera.m_Lens.NearClipPlane;
+            float center = (mainCamera.m_Lens.FarClipPlane + mainCamera.m_Lens.NearClipPlane)*0.5f;
+            Gizmos.DrawWireCube(new Vector3(0,0,center), new Vector3(mainCamera.m_Lens.OrthographicSize
+                                                                     *2*mainCamera.m_Lens.Aspect, mainCamera.m_Lens.OrthographicSize*2, spread));
         } else {
-            Gizmos.DrawFrustum(Vector3.zero, camera.fieldOfView, camera.farClipPlane, camera.nearClipPlane, camera.aspect);
+            Gizmos.DrawFrustum(Vector3.zero, mainCamera.m_Lens.FieldOfView, mainCamera.m_Lens.FarClipPlane, 
+                mainCamera.m_Lens.NearClipPlane, mainCamera.m_Lens.Aspect);
         }
         Gizmos.matrix = temp;
     }
+    */
+    
     #endregion
 
     public enum Constraint { Landscape, Portrait }
