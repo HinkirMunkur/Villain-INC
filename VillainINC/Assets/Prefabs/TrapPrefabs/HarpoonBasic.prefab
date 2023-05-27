@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spearBasic: {fileID: 4664811393327834399}
-  forceToSpear: {x: 0, y: -50}
+  forceToSpear: {x: 0, y: -125}
 --- !u!1 &1534123862938801480
 GameObject:
   m_ObjectHideFlags: 0

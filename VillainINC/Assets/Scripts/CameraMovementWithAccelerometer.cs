@@ -1,6 +1,5 @@
-using System;
-//using UnityEditor;
 using UnityEngine;
+using System;
 
 public class CameraMovementWithAccelerometer : MonoBehaviour
 {
@@ -12,12 +11,14 @@ public class CameraMovementWithAccelerometer : MonoBehaviour
 
     [SerializeField] private float rotationTrashHold;
 
+    private Vector3 lastCameraRotation;
+
     private void Start()
     {
+        lastCameraRotation = mainCamera.transform.eulerAngles;
         Input.gyro.enabled = true;
     }
-    
-    /*
+
     private void LateUpdate()
     {
         var gyroVector = Input.gyro.rotationRateUnbiased;
@@ -27,25 +28,28 @@ public class CameraMovementWithAccelerometer : MonoBehaviour
 
         if (Math.Abs(rotX) > rotationTrashHold || Math.Abs(rotY) > rotationTrashHold)
         {
-            var inspectorRotation = TransformUtils.GetInspectorRotation(mainCamera.transform);
+            Debug.Log("x:" + rotX + "y:" + rotY);
+            var inspectorRotation = mainCamera.transform.eulerAngles;
         
-            if ((inspectorRotation.x < maxVerticalRotate || rotX < 0) &&
-                (inspectorRotation.x > -1 * maxVerticalRotate || rotX > 0))
+            if ((inspectorRotation.x < maxVerticalRotate || rotX < 0)  &&
+                (inspectorRotation.x > -1 * maxVerticalRotate || -1 * rotX > 0))
             {
-                mainCamera.transform.Rotate(rotX, 0f, 0f);
+                lastCameraRotation += Vector3.right * rotX;
             }
 
-            if ((inspectorRotation.y < maxHorizontalRotate || rotY < 0) && 
-                (inspectorRotation.y > -1 * maxHorizontalRotate || rotY > 0))
+            if ((inspectorRotation.y < maxHorizontalRotate || rotY < 0)  && 
+                (inspectorRotation.y > -1 * maxHorizontalRotate || -1 * rotY > 0))
             {
-                mainCamera.transform.Rotate(0f, rotY, 0f);
+                lastCameraRotation += Vector3.up * rotY;
             }
-        
-            var inspectorRotationUpdate = TransformUtils.GetInspectorRotation(mainCamera.transform);
 
-            mainCamera.transform.eulerAngles = new Vector3(inspectorRotationUpdate.x, inspectorRotationUpdate.y, 0f);    
+            mainCamera.transform.eulerAngles = lastCameraRotation;
+
+            //var inspectorRotationUpdate = mainCamera.transform.rotation;
+
+            //mainCamera.transform.eulerAngles = new Vector3(inspectorRotationUpdate.x, inspectorRotationUpdate.y, 0f);    
         }
         
     }
-    */
+    
 }

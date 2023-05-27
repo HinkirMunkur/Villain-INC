@@ -203,7 +203,7 @@ MonoBehaviour:
     stateClass: {fileID: 6957842316955125281}
   - eStates: 5
     stateClass: {fileID: 6957842317988791865}
-  isDebugEnabled: 1
+  isDebugEnabled: 0
   startEState: 3
 --- !u!1 &1649139035209791340
 GameObject:

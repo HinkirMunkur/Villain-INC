@@ -5,7 +5,7 @@ using System;
 public enum ECameraSystem
 {
     GameCameraSystem,
-    Player2CameraSystem,
+    MainMenuCameraSystem,
 }
 
 namespace Munkur
