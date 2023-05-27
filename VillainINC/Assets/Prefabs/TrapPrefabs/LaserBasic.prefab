@@ -9772,7 +9772,6 @@ Transform:
   m_Children:
   - {fileID: 2297112075149038658}
   - {fileID: 8914476759297371826}
-  - {fileID: 2297112076651692465}
   - {fileID: 2297112076138778381}
   - {fileID: 4148449830013525037}
   m_Father: {fileID: 0}
@@ -9821,37 +9820,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1257842026932498114}
-  m_Father: {fileID: 2297112075470404783}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2297112076651692462
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2297112076651692465}
-  m_Layer: 0
-  m_Name: TriggerHandler_SH
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2297112076651692465
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2297112076651692462}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
   m_Father: {fileID: 2297112075470404783}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14893,7 +14861,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2297112075470404783}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7614921072460477235
 GameObject:
@@ -19786,13 +19754,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _laserBasic: {fileID: 3728748504764966080}
   _rayDistance: 100
-  _laserDuration: 3
   _laserFirePoint: {fileID: 4148449830013525037}
   _laserLineRenderer: {fileID: 8773255407191841369}
   _laserStart: {fileID: 5392063526381187889}
   _laserEnd: {fileID: 8318930449184399838}
-  _laserEndBigParticleSystem: {fileID: 18627407838573373}
-  _laserEndSmallParticleSystem: {fileID: 543333029596401688}
   laserHitLayer:
     serializedVersion: 2
     m_Bits: 2147483647
