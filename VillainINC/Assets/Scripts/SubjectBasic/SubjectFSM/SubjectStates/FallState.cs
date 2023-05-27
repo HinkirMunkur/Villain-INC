@@ -32,7 +32,14 @@ public class FallState : SubjectState
             base.GoIdle(context);
         });
     }
-    
-    public override void GoPush(IContext<ESubjectState> context) { }
+
+    public override void GoPush(IContext<ESubjectState> context)
+    {
+        subjectBasic.MovementBehaviour.ChangeVelocity(Vector2.zero);
+        subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.LAND, OnAnimationFinished: () =>
+        {
+            base.GoPush(context);
+        });
+    }
     public override void GoFall(IContext<ESubjectState> context) { }
 }
