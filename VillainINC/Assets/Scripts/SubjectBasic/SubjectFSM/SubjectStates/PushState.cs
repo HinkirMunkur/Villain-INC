@@ -27,10 +27,11 @@ public class PushState : SubjectState
     private IEnumerator PushTimeUntilRelease()
     {
         Vector3 pos = subjectBasic.transform.position;
+        float threshold = 0.1f;
         
         yield return wfs;
 
-        if (subjectBasic.transform.position != pos)
+        if (subjectBasic.transform.position.x > pos.x + threshold || subjectBasic.transform.position.x < pos.x - threshold)
         {
             StartCoroutine(PushTimeUntilRelease());
         }
@@ -40,4 +41,6 @@ public class PushState : SubjectState
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.RUN);
         }
     }
+
+    public override void GoPush(IContext<ESubjectState> context) { }
 }

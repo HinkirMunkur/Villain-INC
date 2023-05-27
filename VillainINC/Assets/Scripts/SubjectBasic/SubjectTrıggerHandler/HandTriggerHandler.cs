@@ -6,7 +6,7 @@ public class HandTriggerHandler : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Box"))
+        if (col.CompareTag("PushBox"))
         {
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.PUSH);
         }
@@ -18,7 +18,7 @@ public class HandTriggerHandler : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.CompareTag("Box"))
+        if (col.CompareTag("PushBox"))
         {
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.RUN);
         }

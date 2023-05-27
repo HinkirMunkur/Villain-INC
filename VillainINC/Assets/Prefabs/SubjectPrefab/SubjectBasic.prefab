@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210239015}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.001, y: -0.0099, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.001, y: -0.043, z: 0}
+  m_LocalScale: {x: 0.091609366, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2478162065700271194}
@@ -98,8 +98,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817846090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0155, y: -0.0161, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.026, y: -0.0161, z: 0}
+  m_LocalScale: {x: 0.9160156, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2478162065700271194}
@@ -203,7 +203,7 @@ MonoBehaviour:
     stateClass: {fileID: 6957842316955125281}
   - eStates: 5
     stateClass: {fileID: 6957842317988791865}
-  isDebugEnabled: 0
+  isDebugEnabled: 1
   startEState: 3
 --- !u!1 &1649139035209791340
 GameObject:
@@ -1056,8 +1056,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   subjectBasic: {fileID: 2478162064733915462}
-  runSpeed: 1.25
-  pushSpeed: 1.75
+  runSpeed: 1.2
+  pushSpeed: 1
   subjectRigidbody2D: {fileID: 2478162064733915481}
 --- !u!1 &8377119141643875600
 GameObject:

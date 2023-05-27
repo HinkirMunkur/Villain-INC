@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8590331856780735810}
   m_Layer: 0
   m_Name: BoxBasic
-  m_TagString: Untagged
+  m_TagString: PushBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
