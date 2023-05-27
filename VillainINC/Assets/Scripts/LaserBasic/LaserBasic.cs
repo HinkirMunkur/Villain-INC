@@ -1,10 +1,7 @@
 using UnityEngine;
 
-public class LaserBasic : ClickableTrapBasic, ISlayer
+public class LaserBasic : AutomaticSystem, ISlayer
 {
-    [SerializeField] private Clickable laserClick;
-    public Clickable LaserClick => laserClick;
-
     [SerializeField] private LaserBehaviour laserBehaviour;
 
     [SerializeField] private bool alwaysShoot;
@@ -14,8 +11,16 @@ public class LaserBasic : ClickableTrapBasic, ISlayer
     {
         subjectBasic.SubjectDieBehaviour.BeforeSubjectDie(ESubjectAnimation.DIE_SHOT);
     }
-    public override void TrapClicked()
+    
+    public override void RunSystem()
     {
         laserBehaviour.ShootLaserCoroutine();
     }
+
+    public override void ExitSystem()
+    {
+        laserBehaviour.StopShootLaserCoroutine();
+    }
+
+    
 }

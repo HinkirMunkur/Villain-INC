@@ -1,29 +1,32 @@
 using System.Collections;
 using UnityEngine;
 using System;
+using UnityEngine.Serialization;
 
 public class LaserBehaviour : MonoBehaviour
 {
     [SerializeField] private LaserBasic _laserBasic;
     [SerializeField] private float _rayDistance = 100f;
-    [SerializeField] private float _laserDuration = 3f;
     [SerializeField] private Transform _laserFirePoint;
     [SerializeField] private LineRenderer _laserLineRenderer;
     //[SerializeField] private ParticleSystem _laserStartParticleSystem;
     //[SerializeField] private GameObject _laserEndParticleSystem;
-    [SerializeField] private ParticleSystem _laserBigParticleSystem;
-    [SerializeField] private ParticleSystem _laserSmallParticleSystem;
-    
+    [SerializeField] private GameObject _laserStart;
+    [SerializeField] private GameObject _laserEnd;
+
     [SerializeField] private LayerMask laserHitLayer;
 
     private bool isLaserShotFinished = true;
+    private Coroutine stopRoutine;
     
     private void Start() 
     {
+        _laserStart.SetActive(false);
+        _laserEnd.SetActive(false);
+        _laserLineRenderer.gameObject.SetActive(false);
         if (_laserBasic.AlwaysShoot) 
         {
-            _laserBasic.LaserClick.enabled = false;
-            StartCoroutine(ShootLaser());
+            StartCoroutine(AlwaysShootLaser());
         }
     }
     
@@ -32,14 +35,30 @@ public class LaserBehaviour : MonoBehaviour
         if (isLaserShotFinished)
         {
             isLaserShotFinished = false;
-            StartCoroutine(ShootLaser(() => isLaserShotFinished = true));
+            _laserStart.SetActive(true);
+            _laserEnd.SetActive(true);
+            _laserLineRenderer.gameObject.SetActive(true);
+            stopRoutine = StartCoroutine(ShootLaser());
         }
     }
-    private IEnumerator ShootLaser(Action OnLaserShotFinished = null)
+    
+    public void StopShootLaserCoroutine()
     {
-        float duration = 0;
-        
-        while (duration < _laserDuration || _laserBasic.AlwaysShoot)
+        if (!isLaserShotFinished)
+        {
+            isLaserShotFinished = true;
+            _laserStart.SetActive(false);
+            _laserEnd.SetActive(false);
+            _laserLineRenderer.gameObject.SetActive(false);
+            StopCoroutine(stopRoutine);
+        }
+    }
+    private IEnumerator ShootLaser()
+    {
+        _laserLineRenderer.gameObject.SetActive(true);
+        _laserStart.SetActive(true);
+        _laserEnd.SetActive(true);
+        while (true)
         {
             RaycastHit2D hit = Physics2D.Raycast(_laserFirePoint.position, transform.right);
 
@@ -50,27 +69,48 @@ public class LaserBehaviour : MonoBehaviour
                     _laserBasic.Slay(hit.transform.GetComponent<SubjectBasic>());
                 }
 
-                _laserBigParticleSystem.transform.position = hit.point;
-                _laserBigParticleSystem.Play();
-                _laserSmallParticleSystem.transform.position = hit.point;
-                _laserSmallParticleSystem.Play();
+                _laserEnd.transform.position = hit.point;
                 Draw2DRay(_laserFirePoint.position, hit.point);
             }
             else 
             {
-                _laserBigParticleSystem.transform.position = hit.point;
-                _laserBigParticleSystem.Play();
-                _laserSmallParticleSystem.transform.position = hit.point;
-                _laserSmallParticleSystem.Play();
+                _laserEnd.transform.position = hit.point;
                 Draw2DRay(_laserFirePoint.position, _laserFirePoint.position + transform.right * _rayDistance);
             }
 
-            duration += Time.deltaTime;
+            yield return null;
+        }
+    }
+    
+    private IEnumerator AlwaysShootLaser()
+    {
+        _laserLineRenderer.gameObject.SetActive(true);
+        _laserStart.SetActive(true);
+        _laserEnd.SetActive(true);
+        while (_laserBasic.AlwaysShoot)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(_laserFirePoint.position, transform.right);
+
+            if (hit) 
+            {
+                if (hit.collider.CompareTag("Player"))
+                {
+                    _laserBasic.Slay(hit.transform.GetComponent<SubjectBasic>());
+                }
+
+                _laserEnd.transform.position = hit.point;
+                Draw2DRay(_laserFirePoint.position, hit.point);
+            }
+            else 
+            {
+                _laserEnd.transform.position = hit.point;
+                Draw2DRay(_laserFirePoint.position, _laserFirePoint.position + transform.right * _rayDistance);
+            }
+
             yield return null;
         }
 
         Draw2DRay(Vector2.zero, Vector2.zero);   
-        OnLaserShotFinished?.Invoke();
     }
     
     private void Draw2DRay(Vector2 startVector, Vector2 endVector) 
