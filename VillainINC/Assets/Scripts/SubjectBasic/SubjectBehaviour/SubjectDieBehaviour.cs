@@ -4,7 +4,8 @@ public class SubjectDieBehaviour : MonoBehaviour
 {
     [SerializeField] private SubjectBasic subjectBasic;
     [SerializeField] private CapsuleCollider2D capsuleCollider2D;
-
+    [SerializeField] private Transform deadParticle;
+    
     public void BeforeSubjectDie(ESubjectAnimation eSubjectDieAnimation)
     {
         capsuleCollider2D.enabled = false;
@@ -16,8 +17,9 @@ public class SubjectDieBehaviour : MonoBehaviour
                 subjectBasic.SubjectDieBehaviour.SubjectDie();
             });
     }
-    public void SubjectDie()
+    private void SubjectDie()
     {
+        Instantiate(deadParticle, subjectBasic.transform.position, Quaternion.identity);
         Destroy(subjectBasic.gameObject);
         subjectBasic.SpawnPipeBasic.SpawnSubjectBasic();
     }
