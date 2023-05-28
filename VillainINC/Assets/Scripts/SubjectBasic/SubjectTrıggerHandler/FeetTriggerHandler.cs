@@ -19,7 +19,6 @@ public class FeetTriggerHandler : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col) 
     {
-        subjectBasic.MovementBehaviour.IsInGround = false;
         subjectBasic.MovementBehaviour.IsInAir = true;
         StartCoroutine(subjectBasic.MovementBehaviour.FindFallSpeed());
 
