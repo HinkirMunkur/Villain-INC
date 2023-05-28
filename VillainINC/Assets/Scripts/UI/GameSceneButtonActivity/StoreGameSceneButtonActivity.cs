@@ -6,37 +6,49 @@ using UnityEngine;
 public class StoreGameSceneButtonActivity : GameSceneButtonActivity
 {
     [SerializeField] private List<GameObject> _disableGOlist;
-    [SerializeField] private int storeFirstLevelIndex;
-
-    [SerializeField] private Material tvEffectMaterial;
-    [SerializeField] private float screenEffectFadeDuration;
-    [SerializeField] private float lastOpacityValue;
+    [SerializeField] private StoreUIController storeUIController;
     
+    [SerializeField] private float screenEffectDuration;
+
+    [SerializeField] private SpriteRenderer screenBG;
+    [SerializeField] private Color lastbgColor;
+
+    private Color initialScreenBGcolor;
+
+    private void Start()
+    {
+        initialScreenBGcolor = screenBG.color;
+    }
+
     protected override void Clicked()
+    {
+        OpenStoreUI();
+    }
+
+    public void OpenStoreUI()
     {
         foreach (var disableGO in _disableGOlist)
         {
             disableGO.SetActive(false);
         }
-
-        SetTvEffectOpacity();
         
+        storeUIController.gameObject.SetActive(true);
+        storeUIController.InitStoreUI();
+        
+        screenBG.DOColor(lastbgColor, screenEffectDuration);
         CameraaManager.Instance.SetCamera(ECameraSystem.MainMenuCameraSystem, EMainMenuCameraType.MainMenuZoomIn);
-
-        //LevelController.Instance.LoadLevelWithIndex(storeFirstLevelIndex);
     }
-
-    private void SetTvEffectOpacity()
+    
+    public void CloseStoreUI()
     {
-        float initOpacityValue = tvEffectMaterial.GetFloat("_Opacity");
-
-        DOTween.To(() => initOpacityValue, x => initOpacityValue = x, lastOpacityValue, screenEffectFadeDuration)
-            .OnUpdate(() => {
-                tvEffectMaterial.SetFloat("_Opacity", initOpacityValue);
-            }).OnComplete(() =>
+        foreach (var disableGO in _disableGOlist)
         {
-            //ViewportHandler.Instance.SetCamera(CameraaManager.Instance.GetActiveVirtualCamera(ECameraSystem.MainMenuCameraSystem));
-            //ViewportHandler.Instance.ComputeResolution();
-        });
+            disableGO.SetActive(true);
+        }
+        
+        storeUIController.gameObject.SetActive(false);
+        screenBG.DOColor(initialScreenBGcolor, screenEffectDuration);
+        CameraaManager.Instance.SetCamera(ECameraSystem.MainMenuCameraSystem, EMainMenuCameraType.MainMenuZoomOut);
     }
+
 }

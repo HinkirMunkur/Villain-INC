@@ -17,7 +17,10 @@ public class SpikeBasic : ClickableTrapBasic, ISlayer
         slayCollider.enabled = true;
         this.PlayAndCheckAnimationFinish(animator, "Do", () =>
         {
-            slayCollider.enabled = false;
+            this.PlayAndCheckAnimationFinish(animator, "Done", () =>
+            {
+                slayCollider.enabled = false;
+            });
         });
     }
 }
