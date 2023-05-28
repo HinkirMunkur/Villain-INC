@@ -1057,7 +1057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subjectBasic: {fileID: 2478162064733915462}
   runSpeed: 1.2
-  pushSpeed: 1
+  pushSpeed: 0.9
   subjectRigidbody2D: {fileID: 2478162064733915481}
 --- !u!1 &8377119141643875600
 GameObject:

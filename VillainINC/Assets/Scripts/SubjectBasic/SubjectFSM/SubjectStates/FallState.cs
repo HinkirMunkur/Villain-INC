@@ -7,6 +7,11 @@ public class FallState : SubjectState
     public override void Do()
     {
         subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.FALL);
+
+        if (subjectBasic.MovementBehaviour.IsInGround) 
+        {
+            subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.RUN);
+        }
     }
 
     public override void Done()

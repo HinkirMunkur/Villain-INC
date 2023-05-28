@@ -19,6 +19,14 @@ public class MovementBehaviour : MonoBehaviour
         get { return isInAir; }
         set { isInAir = value; }
     }
+
+    private bool isInGround = false;
+
+    public bool IsInGround
+    {
+        get { return isInAir; }
+        set { isInAir = value; }
+    }
     
     private float fallSpeed;
     public float FallSpeed 
