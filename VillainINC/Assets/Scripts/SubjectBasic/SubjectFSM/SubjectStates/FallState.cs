@@ -8,6 +8,8 @@ public class FallState : SubjectState
     {
         subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.FALL);
 
+        Debug.Log(subjectBasic.MovementBehaviour.IsInGround);
+
         if (subjectBasic.MovementBehaviour.IsInGround) 
         {
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.RUN);

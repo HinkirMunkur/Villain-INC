@@ -8,14 +8,19 @@ public class FanAffectAreaTriggerHandler : MonoBehaviour
     private bool isObjectInFanArea = false;
     private void OnTriggerEnter2D(Collider2D col)
     {
-        
-        isObjectInFanArea = true;
-        StartCoroutine(AddForceCont(col.attachedRigidbody));
+        if (col.CompareTag("Player") || col.CompareTag("PushBox") || col.CompareTag("Wall")) 
+        {
+            isObjectInFanArea = true;
+            StartCoroutine(AddForceCont(col.attachedRigidbody));
+        }
     }
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        isObjectInFanArea = false;
+        if (col.CompareTag("Player") || col.CompareTag("PushBox") || col.CompareTag("Wall")) 
+        {
+            isObjectInFanArea = false;
+        }
     }
 
     private IEnumerator AddForceCont(Rigidbody2D objectRigidbody)
