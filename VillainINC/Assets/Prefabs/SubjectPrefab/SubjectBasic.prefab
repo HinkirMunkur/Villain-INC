@@ -1150,3 +1150,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subjectBasic: {fileID: 2478162064733915462}
   capsuleCollider2D: {fileID: 8766921168559007105}
+  deadParticle: {fileID: 2590357795036051686, guid: ea3d9209724b0c24eb53d14fd90cceb0, type: 3}
