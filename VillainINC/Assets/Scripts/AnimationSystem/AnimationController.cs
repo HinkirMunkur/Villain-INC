@@ -47,7 +47,7 @@ namespace Munkur
         {
             if (currentAnimationType.Equals(animationType))
             {
-                StopAllCoroutines();
+                //StopAllCoroutines();
                 animator.Rebind();
             }
             else
