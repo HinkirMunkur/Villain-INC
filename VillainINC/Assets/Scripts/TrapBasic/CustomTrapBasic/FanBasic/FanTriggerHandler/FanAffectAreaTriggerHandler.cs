@@ -27,7 +27,7 @@ public class FanAffectAreaTriggerHandler : MonoBehaviour
     {
         while (isObjectInFanArea)
         {
-            objectRigidbody.AddForce(fanBasic.FanForceVector);
+            objectRigidbody.AddForce(fanBasic.FanForceVector * Time.deltaTime);
             yield return null;
         }
     }
