@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d46a0f718d2b1fd4bb10daab87c6b0f8
+guid: 53a3491c1c57bc14c9dea5a29ac36c3b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,11 +100,35 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tirmanma_0
+      name: kedi5_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ed7060447bb3e642b735aba579bea2f
-      internalID: -1172088846
+      spriteID: 1e8805a2fab826745ad7cf0a620aa019
+      internalID: 1744645973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tirmanma_1
+      name: kedi5_1
       rect:
         serializedVersion: 2
         x: 64
@@ -139,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1fb8981a4b7bcc4e97daac06e3796a5
-      internalID: 624706108
+      spriteID: 362fc7c70edb46243a2866d2eee0099e
+      internalID: 1967484630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tirmanma_2
+      name: kedi5_2
       rect:
         serializedVersion: 2
         x: 128
@@ -160,8 +184,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89277b7f00feb7d4790807e25e42e48e
-      internalID: -491061018
+      spriteID: c657de965af99b548b63d0177526a399
+      internalID: 587642318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kedi5_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228b39ab112cd10429dd3cd1bcb3a4fc
+      internalID: -1355488046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kedi5_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5d226c2a4b1cd4db7df14744aca90a
+      internalID: -607448727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kedi5_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb083e97de3c2f34597dfada67a0a0c5
+      internalID: -998889884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kedi5_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9358478ecba7a6a4089637d7f6de5207
+      internalID: -391659346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kedi5_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05a148726ac2ee458a2118031e381d0
+      internalID: 1540956210
       vertices: []
       indices: 
       edges: []
@@ -177,9 +306,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tirmanma_0: -1172088846
-      tirmanma_1: 624706108
-      tirmanma_2: -491061018
+      kedi5_2: 587642318
+      kedi5_4: -607448727
+      kedi5_7: 1540956210
+      kedi5_6: -391659346
+      kedi5_3: -1355488046
+      kedi5_1: 1967484630
+      kedi5_5: -998889884
+      kedi5_0: 1744645973
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
