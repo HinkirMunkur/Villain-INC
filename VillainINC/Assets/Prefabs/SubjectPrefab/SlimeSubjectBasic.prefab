@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7432168225368459038
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915463, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_Name
+      value: SlimeSubjectBasic
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207805422041648540, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1101407981, guid: c5296e35cb05f41498bea5ec02fa72b9, type: 3}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[0].AnimationName
+      value: SlimeIdle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[1].AnimationName
+      value: SlimeRun
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[1].AnimationType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[2].AnimationName
+      value: SlimeFall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[2].AnimationType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[3].AnimationName
+      value: SlimeLand
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[3].AnimationType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[4].AnimationName
+      value: SlimePush
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[4].AnimationType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[5].AnimationName
+      value: SlimeJump
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[5].AnimationType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[6].AnimationName
+      value: SlimeCrushed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[6].AnimationType
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[7].AnimationName
+      value: SlimeShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[7].AnimationType
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[8].AnimationName
+      value: SlimeSpikeAbove
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[8].AnimationType
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[9].AnimationName
+      value: SlimeSpikeBelow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[9].AnimationType
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420563, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d3046f0c5b4f5e840bf108d310e0335d, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
