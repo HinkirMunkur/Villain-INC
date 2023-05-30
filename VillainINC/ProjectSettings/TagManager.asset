@@ -12,6 +12,7 @@ TagManager:
   - Wall
   - PushBox
   - Spear
+  - Wind
   layers:
   - Default
   - TransparentFX
@@ -23,8 +24,8 @@ TagManager:
   - ClickObject
   - SubjectBasic
   - Spear
-  - 
-  - 
+  - Fan
+  - Laser
   - 
   - 
   - 
