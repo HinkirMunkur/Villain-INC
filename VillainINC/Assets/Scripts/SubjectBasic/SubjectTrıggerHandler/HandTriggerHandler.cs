@@ -10,7 +10,7 @@ public class HandTriggerHandler : MonoBehaviour
         {
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.PUSH);
         }
-        else if (col.CompareTag("Wall"))
+        else if (col.CompareTag("Wall") || col.CompareTag("Player"))
         {
             subjectBasic.MovementBehaviour.RotateSubject();
         }
