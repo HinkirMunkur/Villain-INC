@@ -16,10 +16,11 @@ public class SubjectDieBehaviour : MonoBehaviour
             {
                 subjectBasic.SubjectDieBehaviour.SubjectDie();
             });
+        
+        Instantiate(deadParticle, subjectBasic.transform.position, Quaternion.identity);
     }
     private void SubjectDie()
     {
-        Instantiate(deadParticle, subjectBasic.transform.position, Quaternion.identity);
         Destroy(subjectBasic.gameObject);
         subjectBasic.SpawnPipeBasic.SpawnSubjectBasic();
     }

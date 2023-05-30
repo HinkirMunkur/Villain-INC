@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class StoreUIController : MonoBehaviour
+public class StoreUIController : Singletonn<StoreUIController>
 {
     [SerializeField] private TMP_Text cardAmountText;
     [SerializeField] private StoreUIExitButton storeUIExitButton;
@@ -19,18 +19,30 @@ public class StoreUIController : MonoBehaviour
 
     public void CloseStoreUI()
     {
-        subjectUIController.UnsubsClickable();
+        subjectUIController.CloseSubjectUIController();
     }
 
-    private int GetCardAmount()
+    public int GetCardAmount()
     {
         return PlayerPrefs.GetInt(CARD_AMOUNT, 0);
     }
 
-    private void SetCardAmount(int cardAmount)
+    public void SetCardAmount(int cardAmount)
     {
         PlayerPrefs.SetInt(CARD_AMOUNT, cardAmount);
     }
 
-
+    public void UpdateCardAmountText()
+    {
+        cardAmountText.text = GetCardAmount().ToString();
+    }
+    
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            SetCardAmount(1);
+            cardAmountText.text = GetCardAmount().ToString();
+        }
+    }
 }

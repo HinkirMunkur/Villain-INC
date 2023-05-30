@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1087f3c987cec4fa4e1064948059d6, type: 3}
   m_Name: GameDataSO
   m_EditorClassIdentifier: 
-  levelDatas:
-  - {fileID: 11400000, guid: 66476e076fd771f4897061a718dd6782, type: 2}
+  levelData: []
+  subjectBasicList:
+  - {fileID: 2478162064733915462, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+  - {fileID: 7825065715464738442, guid: b0c3883ce15f5784db0dda8947e35b5a, type: 3}
+  - {fileID: 7325649026676417010, guid: 8012e764dffd48d44af31985d0c72804, type: 3}
+  - {fileID: 5234319658462160708, guid: 02d2a2d5519b3af439c6bc4b49f350de, type: 3}
+  - {fileID: 4990110274881588824, guid: e97b46793d48533458a1ba629096f3fd, type: 3}
+  - {fileID: 96180835240607524, guid: 40a5cda87ea0ba741a023db5771cbd8c, type: 3}

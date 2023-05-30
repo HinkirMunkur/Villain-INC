@@ -381,7 +381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 632535305}
   - component: {fileID: 632535306}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: GroundColliders
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2139,7 +2139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748307671840727262, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -69.00006
+      value: -69
       objectReference: {fileID: 0}
     - target: {fileID: 6748307672608858444, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
       propertyPath: m_RootOrder

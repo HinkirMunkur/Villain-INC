@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2590357794981699097}
   - component: {fileID: 2590357794981699096}
   - component: {fileID: 2590357794981699103}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: OrganEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 2590357794981699102}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2590357795036051686}
@@ -50,7 +50,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -169,8 +169,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 5
-      minScalar: 3
+      scalar: 7
+      minScalar: 5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -608,7 +608,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.2
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -3842,10 +3842,10 @@ ParticleSystem:
         m_RotationOrder: 4
     minKillSpeed: 0
     maxKillSpeed: 10000
-    radiusScale: 0.6
+    radiusScale: 0.1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 759
+      m_Bits: 24576
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -4839,7 +4839,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 934899543
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_RenderMode: 0
@@ -4881,7 +4881,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2590357795036051686}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: DeadParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4917,7 +4917,7 @@ GameObject:
   - component: {fileID: 2590357795892740911}
   - component: {fileID: 2590357795892740910}
   - component: {fileID: 2590357795892740909}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: BloodEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4933,7 +4933,7 @@ Transform:
   m_GameObject: {fileID: 2590357795892740908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2590357795036051686}
@@ -4956,7 +4956,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -5075,8 +5075,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 4
-      minScalar: 2
+      scalar: 6
+      minScalar: 4
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5514,7 +5514,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.2
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -8748,10 +8748,10 @@ ParticleSystem:
         m_RotationOrder: 4
     minKillSpeed: 0
     maxKillSpeed: 10000
-    radiusScale: 0.6
+    radiusScale: 0.1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 759
+      m_Bits: 24576
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -9789,7 +9789,7 @@ GameObject:
   - component: {fileID: 7272594419871775295}
   - component: {fileID: 7272594419871775294}
   - component: {fileID: 7272594419871775293}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: DeadEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9805,7 +9805,7 @@ Transform:
   m_GameObject: {fileID: 7272594419871775292}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2590357795036051686}
@@ -9828,7 +9828,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -9947,8 +9947,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 5
-      minScalar: 3
+      scalar: 7
+      minScalar: 5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -10386,7 +10386,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.2
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -13624,10 +13624,10 @@ ParticleSystem:
         m_RotationOrder: 4
     minKillSpeed: 0
     maxKillSpeed: 10000
-    radiusScale: 0.6
+    radiusScale: 0.1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 759
+      m_Bits: 24576
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
