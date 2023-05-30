@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spearBasic: {fileID: 4664811393327834399}
-  forceToSpear: {x: 0, y: -125}
+  forceToSpear: {x: 0, y: -80000}
 --- !u!1 &1534123862938801480
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +406,22 @@ PrefabInstance:
     - target: {fileID: 1451699878951591468, guid: 6729866e4305b37469eb3b68e11946e5, type: 3}
       propertyPath: m_Name
       value: SpearBasic
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741071659066523962, guid: 6729866e4305b37469eb3b68e11946e5, type: 3}
+      propertyPath: m_Size.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741071659066523962, guid: 6729866e4305b37469eb3b68e11946e5, type: 3}
+      propertyPath: m_Size.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741071659066523962, guid: 6729866e4305b37469eb3b68e11946e5, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741071659066523962, guid: 6729866e4305b37469eb3b68e11946e5, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6729866e4305b37469eb3b68e11946e5, type: 3}

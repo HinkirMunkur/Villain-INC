@@ -42,6 +42,6 @@ public class SpearBasic : TrapBasic, ISlayer
 
     public void AddForeToSpear(Vector2 force)
     {
-        spearRigidbody2D.AddForce(force);
+        spearRigidbody2D.AddForce(force * Time.deltaTime);
     }
 }

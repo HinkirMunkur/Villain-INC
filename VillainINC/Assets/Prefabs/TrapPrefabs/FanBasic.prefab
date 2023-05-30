@@ -385,7 +385,7 @@ MonoBehaviour:
   - {fileID: 1592517613416616357}
   - {fileID: 1592517613429644313}
   - {fileID: 1592517611872201557}
-  fanForceVector: {x: -100, y: 0}
+  fanForceVector: {x: 450, y: 1300}
 --- !u!1 &1460719023705871997
 GameObject:
   m_ObjectHideFlags: 0
