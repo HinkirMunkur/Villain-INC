@@ -165,7 +165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 165636840}
   - component: {fileID: 165636841}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: GroundColliders
   m_TagString: Ground
   m_Icon: {fileID: 0}

@@ -59,6 +59,46 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -732498621, guid: 1859952d6eb4b2a4ba9fd76e285a4b20, type: 3}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[0].AnimationName
+      value: TVidle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[1].AnimationName
+      value: TVcrushed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[2].AnimationName
+      value: TVspikeAbove
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[3].AnimationName
+      value: TVspikeBelow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[4].AnimationName
+      value: TVjump
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[5].AnimationName
+      value: TVrun
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[6].AnimationName
+      value: TVfall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[7].AnimationName
+      value: TVland
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[8].AnimationName
+      value: TVshot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[9].AnimationName
+      value: TVpush
+      objectReference: {fileID: 0}
     - target: {fileID: 6957842317389420563, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
       propertyPath: m_Controller
       value: 
