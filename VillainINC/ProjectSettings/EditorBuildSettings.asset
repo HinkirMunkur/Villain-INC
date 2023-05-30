@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CanLevel4.unity
     guid: 4dce94282c1bd894f9750228ded974d3
+  - enabled: 1
+    path: Assets/Scenes/feyyazlevel1.unity
+    guid: 713b6258c9bf58f4b9ea0ce635d2104e
   m_configObjects: {}

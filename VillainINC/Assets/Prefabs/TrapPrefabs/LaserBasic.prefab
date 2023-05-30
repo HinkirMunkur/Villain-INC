@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5801242646434518010}
   - component: {fileID: 4471772741699403516}
   - component: {fileID: 8699950729989734326}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BigStartParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4822,7 +4822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3124613907919639603}
   - component: {fileID: 671398266577114892}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LaserSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4907,7 +4907,7 @@ GameObject:
   - component: {fileID: 55067054040414474}
   - component: {fileID: 543333029596401688}
   - component: {fileID: 7067131846032745497}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SmallEndParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9717,7 +9717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2297112075149038658}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Visual_H
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9751,7 +9751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2297112075470404783}
   - component: {fileID: 3728748504764966080}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: LaserBasic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9800,7 +9800,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2297112076138778381}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Behaviour_SH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9834,7 +9834,7 @@ GameObject:
   - component: {fileID: 619278339859395192}
   - component: {fileID: 18627407838573373}
   - component: {fileID: 1436504127636039315}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BigEndParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14644,7 +14644,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 326082295594800112}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14677,7 +14677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4692714688171055914}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14711,7 +14711,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8914476759297371826}
   - component: {fileID: 8773255407191841369}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LaserLineRenderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14841,7 +14841,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4148449830013525037}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LaserShootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14874,7 +14874,7 @@ GameObject:
   - component: {fileID: 638666220834614234}
   - component: {fileID: 4780727181475876953}
   - component: {fileID: 2603940439115631853}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SmallStartParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19684,7 +19684,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5934120722820034586}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19718,7 +19718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1257842026932498114}
   - component: {fileID: 3866442115598079143}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: LaserBehaviour
   m_TagString: Untagged
   m_Icon: {fileID: 0}

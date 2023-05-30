@@ -797,11 +797,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748307671381284986, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -43.499985
+      value: -43.5
       objectReference: {fileID: 0}
     - target: {fileID: 6748307671840727262, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -69.000046
+      value: -69
       objectReference: {fileID: 0}
     - target: {fileID: 6748307672608858444, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
       propertyPath: m_RootOrder
@@ -1813,6 +1813,10 @@ PrefabInstance:
     - target: {fileID: 1534123862561338052, guid: ad6261ee764e69041bfbaf66810a4a66, type: 3}
       propertyPath: m_Name
       value: HarpoonBasic
+      objectReference: {fileID: 0}
+    - target: {fileID: 1534123862561338057, guid: ad6261ee764e69041bfbaf66810a4a66, type: 3}
+      propertyPath: forceToSpear.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1534123862561338057, guid: ad6261ee764e69041bfbaf66810a4a66, type: 3}
       propertyPath: forceToSpear.y
