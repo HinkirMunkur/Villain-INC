@@ -46,6 +46,8 @@ public class StoreGameSceneButtonActivity : GameSceneButtonActivity
             disableGO.SetActive(true);
         }
         
+        storeUIController.CloseStoreUI();
+        
         storeUIController.gameObject.SetActive(false);
         screenBG.DOColor(initialScreenBGcolor, screenEffectDuration);
         CameraaManager.Instance.SetCamera(ECameraSystem.MainMenuCameraSystem, EMainMenuCameraType.MainMenuZoomOut);

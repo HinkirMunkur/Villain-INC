@@ -5,13 +5,21 @@ public class StoreUIController : MonoBehaviour
 {
     [SerializeField] private TMP_Text cardAmountText;
     [SerializeField] private StoreUIExitButton storeUIExitButton;
+    [SerializeField] private SubjectUIController subjectUIController;
     
     private const string CARD_AMOUNT = "CARD_AMOUNT";
     
     public void InitStoreUI()
     {
+        subjectUIController.InitSubjectUIController();
+        
         storeUIExitButton.SubsClickable();
         cardAmountText.text = GetCardAmount().ToString();
+    }
+
+    public void CloseStoreUI()
+    {
+        subjectUIController.UnsubsClickable();
     }
 
     private int GetCardAmount()
