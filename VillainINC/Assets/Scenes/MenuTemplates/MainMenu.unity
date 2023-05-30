@@ -1643,6 +1643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardAmountText: {fileID: 1253947186}
   storeUIExitButton: {fileID: 1998331707}
+  subjectUIController: {fileID: 0}
 --- !u!1 &1079324881
 GameObject:
   m_ObjectHideFlags: 0

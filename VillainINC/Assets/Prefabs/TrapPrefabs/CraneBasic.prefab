@@ -552,7 +552,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 678588338180747440, guid: e53cd62e68fdd2448b3c8d1c549677bd, type: 3}
       propertyPath: force.y
-      value: -40000
+      value: -60000
       objectReference: {fileID: 0}
     - target: {fileID: 678588338180747445, guid: e53cd62e68fdd2448b3c8d1c549677bd, type: 3}
       propertyPath: m_Name
