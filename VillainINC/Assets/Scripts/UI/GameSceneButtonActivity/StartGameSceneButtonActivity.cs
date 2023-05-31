@@ -1,4 +1,5 @@
 using UnityEngine;
+using Munkur;
 
 public class StartGameSceneButtonActivity : GameSceneButtonActivity
 {
@@ -6,5 +7,6 @@ public class StartGameSceneButtonActivity : GameSceneButtonActivity
     protected override void Clicked()
     {
         LevelController.Instance.LoadLevelWithIndex(startFirstLevelIndex);
+        AudioManager.Instance.StopMusic();
     }
 }

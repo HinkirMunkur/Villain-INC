@@ -359,7 +359,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4815fc7bf44c41b458467f13a04b644e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _musicList: []
+  _musicList:
+  - {fileID: 11400000, guid: 8eedf608788ae3b40a4a59de9d7e390f, type: 2}
   _soundEffectList: []
   _musicAudioSource: {fileID: 6762879008391906924}
   _soundEffectAudioSource: {fileID: 6762879008391906927}
