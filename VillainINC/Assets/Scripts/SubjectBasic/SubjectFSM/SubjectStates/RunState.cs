@@ -6,6 +6,7 @@ public class RunState : SubjectState
 {
     public override void Do()
     {
+        subjectBasic.SubjectAudio.RunAudio();
         subjectBasic.MovementBehaviour.RunSteady();
         subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.RUN);
     }

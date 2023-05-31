@@ -56,7 +56,7 @@ public class MovementBehaviour : MonoBehaviour
     {
         while (subjectBasic.SubjectStateMachineController.GetCurrentState() == ESubjectState.RUN)
         {
-            AudioManager.Instance.PlaySoundEffect("Running");
+            
             subjectRigidbody2D.velocity = (subjectRigidbody2D.velocity * Vector2.up) + subjectRunVelocity;
             yield return null;
         }
@@ -71,7 +71,6 @@ public class MovementBehaviour : MonoBehaviour
     {
         while (subjectBasic.SubjectStateMachineController.GetCurrentState() == ESubjectState.PUSH)
         {
-            AudioManager.Instance.PlaySoundEffect("Running");
             subjectRigidbody2D.velocity = (subjectRigidbody2D.velocity * Vector2.up) + subjectPushItemVelocity;
             yield return null;
         }

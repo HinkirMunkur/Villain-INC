@@ -17,6 +17,9 @@ public class SubjectBasic : MonoBehaviour, IAmBasic
     [SerializeField] private SubjectDieBehaviour subjectDieBehaviour;
     public SubjectDieBehaviour SubjectDieBehaviour => subjectDieBehaviour;
 
+    [SerializeField] private SubjectAudio subjectAudio;
+    public SubjectAudio SubjectAudio => subjectAudio;
+
     private SpawnPipeBasic spawnPipeBasic;
 
     public SpawnPipeBasic SpawnPipeBasic => spawnPipeBasic;
