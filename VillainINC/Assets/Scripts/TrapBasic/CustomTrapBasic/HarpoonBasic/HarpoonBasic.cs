@@ -30,8 +30,6 @@ public class HarpoonBasic : ClickableTrapBasic
 
             forceToSpear.x = Mathf.Cos(Mathf.Deg2Rad * (currentAngle + 90)) * 10000;
             forceToSpear.y = Mathf.Sin(Mathf.Deg2Rad * (currentAngle + 90)) * 10000;
-        
-            Debug.Log(forceToSpear);
         }
 
         spearBasic.SetSpearDynamic();

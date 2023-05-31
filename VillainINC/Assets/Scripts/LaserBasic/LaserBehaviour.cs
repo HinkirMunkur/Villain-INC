@@ -64,7 +64,7 @@ public class LaserBehaviour : MonoBehaviour
 
             while (hit && hit.collider.CompareTag("Wind")) 
             {
-                hit = Physics2D.Raycast(hit.point + Vector2.right * 3, transform.right);
+                hit = Physics2D.Raycast(hit.point + (Vector2)transform.right, transform.right);
             }
             
             if (hit) 
@@ -98,7 +98,7 @@ public class LaserBehaviour : MonoBehaviour
 
             while (hit && hit.collider.CompareTag("Wind")) 
             {
-                hit = Physics2D.Raycast(hit.point + Vector2.right * 3, transform.right);
+                hit = Physics2D.Raycast(hit.point + (Vector2)transform.right, transform.right);
             }
 
             if (hit) 
