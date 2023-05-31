@@ -25,8 +25,9 @@ public class LevelFlowManager : Singletonn<LevelFlowManager>
         {
             if (result)
             {
+                LevelController.Instance.SetCurrentSavedLevelIndex(LevelController.Instance.GetCurrentLevelIndex()+1);
                 TransitionManager.Instance.EndSceneTransition(LevelController.Instance
-                    .GetSceneNameWithIndex(LevelController.Instance.GetCurrentLevelIndex()+1));
+                    .GetSceneNameWithIndex(LevelController.Instance.GetCurrentSavedLevelIndex()));
             }
         });
     }
