@@ -1,7 +1,27 @@
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelController : SingletonnPersistent<LevelController>
 {
+    [SerializeField] private int firstLevelIndex;
+
+    private const string CURR_LEVEL_INDEX = "CURR_LEVEL_INDEX";
+
+    public int GetCurrentSavedLevelIndex()
+    {
+        return PlayerPrefs.GetInt(CURR_LEVEL_INDEX, 2);
+    }
+
+    public void SetCurrentSavedLevelIndex(int levelIndex)
+    {
+        if (levelIndex >= GetTotalAmountOfLevel())
+        {
+            levelIndex = firstLevelIndex;
+        }
+        
+        PlayerPrefs.SetInt(CURR_LEVEL_INDEX, levelIndex);
+    }
+    
     public void LoadLevelWithIndex(int levelIndex)
     {
         SceneManager.LoadScene(levelIndex);

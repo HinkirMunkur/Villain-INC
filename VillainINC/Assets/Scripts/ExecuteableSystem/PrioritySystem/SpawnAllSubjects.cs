@@ -6,7 +6,7 @@ public class SpawnAllSubjects : Priority
     
     public override ETaskStatus Run()
     {
-        CurrentTaskSuccess = (spawnPipeBasic.TotalSpawnAmount == 0);
+        CurrentTaskSuccess = spawnPipeBasic.IsAllSubjectSpawned;
         return ETaskStatus.FINISH;
     }
 }
