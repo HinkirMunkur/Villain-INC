@@ -1842,7 +1842,7 @@ GameObject:
   - component: {fileID: 1141280039}
   - component: {fileID: 1141280040}
   - component: {fileID: 1141280041}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: WallColliders
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2114,7 +2114,7 @@ GameObject:
   - component: {fileID: 1250563411}
   - component: {fileID: 1250563412}
   - component: {fileID: 1250563413}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: GroundColliders
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2428,6 +2428,10 @@ PrefabInstance:
     - target: {fileID: 6748307671381284986, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -43.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6748307671381284986, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 6748307671840727262, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
       propertyPath: m_AnchoredPosition.x

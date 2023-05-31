@@ -3845,7 +3845,7 @@ ParticleSystem:
     radiusScale: 0.1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 24576
+      m_Bits: 57344
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -8751,7 +8751,7 @@ ParticleSystem:
     radiusScale: 0.1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 24576
+      m_Bits: 57344
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -13627,7 +13627,7 @@ ParticleSystem:
     radiusScale: 0.1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 24576
+      m_Bits: 57344
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
