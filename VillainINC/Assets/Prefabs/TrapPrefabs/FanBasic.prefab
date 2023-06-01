@@ -93,7 +93,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460719021900597286}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ae14f9b585e66de4893514eae6750dd9, type: 2}
   m_CullingMode: 0
@@ -344,6 +344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1460719023633411341}
   - component: {fileID: 1460719023633411340}
+  - component: {fileID: 2758271533343237991}
   m_Layer: 10
   m_Name: FanBasic
   m_TagString: Untagged
@@ -386,6 +387,33 @@ MonoBehaviour:
   - {fileID: 1592517613429644313}
   - {fileID: 1592517611872201557}
   fanForceVector: {x: 450, y: 1300}
+  animator: {fileID: 1460719021900597281}
+--- !u!61 &2758271533343237991
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460719023633411347}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.035425186, y: 0.0044281483}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.44205284, y: 0.35348964}
+  m_EdgeRadius: 0
 --- !u!1 &1460719023705871997
 GameObject:
   m_ObjectHideFlags: 0

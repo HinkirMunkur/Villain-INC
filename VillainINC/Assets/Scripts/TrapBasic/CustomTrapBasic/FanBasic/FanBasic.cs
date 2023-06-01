@@ -8,6 +8,8 @@ public class FanBasic : ClickableTrapBasic
 
     [SerializeField] private Vector2 fanForceVector;
     public Vector2 FanForceVector => fanForceVector;
+
+    [SerializeField] private Animator animator;
     
     private bool isOpen = false;
     public override void TrapClicked()
@@ -16,6 +18,7 @@ public class FanBasic : ClickableTrapBasic
         {
             isOpen = false;
             boxCollider2D.enabled = false;
+            animator.enabled = false;
             foreach (var fanParticle in fanParticleList)
             {
                 fanParticle.Stop();
@@ -25,6 +28,7 @@ public class FanBasic : ClickableTrapBasic
         {
             isOpen = true;
             boxCollider2D.enabled = true;
+            animator.enabled = true;
             foreach (var fanParticle in fanParticleList)
             {
                 fanParticle.Play();

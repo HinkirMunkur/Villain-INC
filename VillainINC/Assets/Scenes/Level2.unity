@@ -2195,6 +2195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57bc6953267a5334195171fd56c8f918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstLevelIndex: 0
 --- !u!20 &1498225156 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 6748307671595629082, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
