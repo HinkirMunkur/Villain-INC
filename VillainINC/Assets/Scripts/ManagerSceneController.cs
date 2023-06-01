@@ -20,7 +20,7 @@ public class ManagerSceneController : SingletonnPersistent<ManagerSceneControlle
         else
         {
             QualitySettings.vSyncCount = 0;
-            Application.targetFrameRate = 60;
+            //Application.targetFrameRate = 60;
             Destroy(this.gameObject);
             LevelController.Instance.LoadNextLevel();
         }
