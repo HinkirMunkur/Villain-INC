@@ -8,9 +8,9 @@ public class FallState : SubjectState
     {
         subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.FALL);
 
-        Debug.Log(subjectBasic.MovementBehaviour.IsInGround);
+        Debug.Log(subjectBasic.MovementBehaviour.IsInAir);
 
-        if (subjectBasic.MovementBehaviour.IsInGround) 
+        if (!subjectBasic.MovementBehaviour.IsInAir) 
         {
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.RUN);
         }
@@ -19,14 +19,15 @@ public class FallState : SubjectState
     public override void Done()
     {
         subjectBasic.MovementBehaviour.FallSpeed = 0;
-        subjectBasic.MovementBehaviour.IsInAir = false;
     }
 
     public override void GoRun(IContext<ESubjectState> context)
     {
+        subjectBasic.FeetTriggerHandler.gameObject.SetActive(false);
         subjectBasic.MovementBehaviour.ChangeVelocity(Vector2.zero);
         subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.LAND, OnAnimationFinished: () =>
         {
+            subjectBasic.FeetTriggerHandler.gameObject.SetActive(true);
             base.GoRun(context);
         });
     }
@@ -42,9 +43,11 @@ public class FallState : SubjectState
 
     public override void GoPush(IContext<ESubjectState> context)
     {
+        subjectBasic.FeetTriggerHandler.gameObject.SetActive(false);
         subjectBasic.MovementBehaviour.ChangeVelocity(Vector2.zero);
         subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.LAND, OnAnimationFinished: () =>
         {
+            subjectBasic.FeetTriggerHandler.gameObject.SetActive(true);
             base.GoPush(context);
         });
     }

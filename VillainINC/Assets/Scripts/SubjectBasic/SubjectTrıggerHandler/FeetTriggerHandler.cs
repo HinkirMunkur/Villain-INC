@@ -8,7 +8,7 @@ public class FeetTriggerHandler : MonoBehaviour
     {
         if (col.CompareTag("Ground") || col.CompareTag("PushBox"))
         {
-            subjectBasic.MovementBehaviour.IsInGround = true;
+            subjectBasic.MovementBehaviour.IsInAir = false;
             subjectBasic.HandTriggerHandler.gameObject.SetActive(true);
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.RUN);
         }
@@ -23,9 +23,11 @@ public class FeetTriggerHandler : MonoBehaviour
         if (col.CompareTag("Ground") || col.CompareTag("PushBox") || col.CompareTag("Tramboline")) 
         {
             subjectBasic.MovementBehaviour.IsInAir = true;
-            subjectBasic.MovementBehaviour.IsInGround = false;
             subjectBasic.HandTriggerHandler.gameObject.SetActive(false);
-            StartCoroutine(subjectBasic.MovementBehaviour.FindFallSpeed());
+            if (gameObject.activeSelf)
+            {
+                StartCoroutine(subjectBasic.MovementBehaviour.FindFallSpeed());
+            }
         }
     }
 }

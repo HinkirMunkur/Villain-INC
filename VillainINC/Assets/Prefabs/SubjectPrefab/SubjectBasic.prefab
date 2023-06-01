@@ -369,6 +369,7 @@ MonoBehaviour:
   movementBehaviour: {fileID: 6957842318146830365}
   subjectAnimationController: {fileID: 6957842317389420560}
   subjectStateMachineController: {fileID: 3150285434639228433}
+  feetTriggerHandler: {fileID: 7687676840591643688}
   handTriggerHandler: {fileID: 2763602488612330755}
   subjectDieBehaviour: {fileID: 749670623969412260}
   subjectAudio: {fileID: 5547315681153120186}

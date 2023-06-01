@@ -13,20 +13,12 @@ public class MovementBehaviour : MonoBehaviour
     [SerializeField] private Rigidbody2D subjectRigidbody2D;
     public Rigidbody2D SubjectRigidbody2D => subjectRigidbody2D;
 
-    private bool isInAir;
+    private bool isInAir = true;
 
     public bool IsInAir
     {
         get { return isInAir; }
         set { isInAir = value; }
-    }
-
-    private bool isInGround = false;
-
-    public bool IsInGround
-    {
-        get { return isInGround; }
-        set { isInGround = value; }
     }
     
     private float fallSpeed;

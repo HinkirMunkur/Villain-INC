@@ -11,6 +11,9 @@ public class SubjectBasic : MonoBehaviour, IAmBasic
     [SerializeField] private SubjectStateMachineController subjectStateMachineController;
     public SubjectStateMachineController SubjectStateMachineController => subjectStateMachineController;
 
+    [SerializeField] private FeetTriggerHandler feetTriggerHandler;
+    public FeetTriggerHandler FeetTriggerHandler => feetTriggerHandler;
+    
     [SerializeField] private HandTriggerHandler handTriggerHandler;
     public HandTriggerHandler HandTriggerHandler => handTriggerHandler;
 
