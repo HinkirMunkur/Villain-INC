@@ -6,8 +6,9 @@ public class SpawnPipeBasic : MonoBehaviour
     //[SerializeField] private SubjectBasic subjectBasicPrefab;
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private int totalSpawnAmount;
-
     public int TotalSpawnAmount => totalSpawnAmount;
+    
+    public bool IsAllSubjectSpawned { get; set; } = false;
 
     private void Awake()
     {
@@ -38,6 +39,7 @@ public class SpawnPipeBasic : MonoBehaviour
         }
         else
         {
+            IsAllSubjectSpawned = true;
             LevelFlowManager.Instance.ExecuteSuccessPriorities();
         }
     }
