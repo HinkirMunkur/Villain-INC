@@ -25,7 +25,6 @@ public class FeetTriggerHandler : MonoBehaviour
             subjectBasic.MovementBehaviour.IsInAir = true;
             subjectBasic.MovementBehaviour.IsInGround = false;
             subjectBasic.HandTriggerHandler.gameObject.SetActive(false);
-            Debug.Log(subjectBasic.MovementBehaviour.IsInAir);
             StartCoroutine(subjectBasic.MovementBehaviour.FindFallSpeed());
         }
     }

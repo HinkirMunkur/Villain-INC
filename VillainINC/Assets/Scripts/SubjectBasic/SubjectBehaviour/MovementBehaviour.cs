@@ -25,8 +25,8 @@ public class MovementBehaviour : MonoBehaviour
 
     public bool IsInGround
     {
-        get { return isInAir; }
-        set { isInAir = value; }
+        get { return isInGround; }
+        set { isInGround = value; }
     }
     
     private float fallSpeed;
@@ -101,7 +101,6 @@ public class MovementBehaviour : MonoBehaviour
     
     public IEnumerator FindFallSpeed() 
     {
-        Debug.Log(isInAir);
         while (isInAir) 
         {
             if (subjectRigidbody2D.velocity.y < fallSpeed) 
