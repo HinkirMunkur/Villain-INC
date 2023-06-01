@@ -362,9 +362,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _musicList:
   - {fileID: 11400000, guid: 8eedf608788ae3b40a4a59de9d7e390f, type: 2}
-  - {fileID: 11400000, guid: 8eedf608788ae3b40a4a59de9d7e390f, type: 2}
-  - {fileID: 11400000, guid: 8eedf608788ae3b40a4a59de9d7e390f, type: 2}
-  - {fileID: 11400000, guid: 8eedf608788ae3b40a4a59de9d7e390f, type: 2}
+  - {fileID: 11400000, guid: 05b84c4976aea034e97f4bd9392f2b91, type: 2}
+  - {fileID: 11400000, guid: 5d382cb8026d737418cabfd8a8c8f599, type: 2}
+  - {fileID: 11400000, guid: 9b7edb0370f237e4ead1cfbdc44f28b9, type: 2}
   _soundEffectList:
   - {fileID: 11400000, guid: 5fd1a72aad44e644e96666aefdc24237, type: 2}
   _musicAudioSource: {fileID: 6762879008391906924}
