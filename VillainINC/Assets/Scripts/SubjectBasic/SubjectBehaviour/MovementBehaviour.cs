@@ -101,6 +101,7 @@ public class MovementBehaviour : MonoBehaviour
     
     public IEnumerator FindFallSpeed() 
     {
+        Debug.Log(isInAir);
         while (isInAir) 
         {
             if (subjectRigidbody2D.velocity.y < fallSpeed) 
