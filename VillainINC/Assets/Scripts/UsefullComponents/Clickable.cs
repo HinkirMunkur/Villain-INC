@@ -34,10 +34,6 @@ public class Clickable : MonoBehaviour
         
         if (raycastHit2D.collider != null && raycastHit2D.collider.gameObject == gameObject)
         {
-            if (StaticUtilitiesBase.IsPointerOverUIObject())
-            {
-                return;
-            }
 
             OnClicked?.Invoke();
 

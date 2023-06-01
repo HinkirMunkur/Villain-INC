@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TrapsSpriteAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 4e11cb6acdf534a47ad0fd1b726fc91c, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -1405118263, guid: 9e9c7d122dd4f25459c4531620ce33f0, type: 3}
+  - {fileID: 2070459288, guid: 9e9c7d122dd4f25459c4531620ce33f0, type: 3}
+  - {fileID: 972932779, guid: 9e9c7d122dd4f25459c4531620ce33f0, type: 3}
+  - {fileID: 1552499059, guid: 9e9c7d122dd4f25459c4531620ce33f0, type: 3}
+  - {fileID: 21300000, guid: c2804ce2809f19a48b3eb18780769121, type: 3}
+  - {fileID: 748659407, guid: 458967e386f1a12448e893d314fe780d, type: 3}
+  - {fileID: 637958775, guid: 458967e386f1a12448e893d314fe780d, type: 3}
+  - {fileID: 447380206, guid: 458967e386f1a12448e893d314fe780d, type: 3}
+  - {fileID: 989989480, guid: 458967e386f1a12448e893d314fe780d, type: 3}
+  - {fileID: 21300000, guid: 4625cb645c833364d91737d56a714bf0, type: 3}
+  - {fileID: -1402977504, guid: ef44dc55419c91f429ca4f8b9142333f, type: 3}
+  - {fileID: -1464170654, guid: ef44dc55419c91f429ca4f8b9142333f, type: 3}
+  - {fileID: 188549239, guid: ef44dc55419c91f429ca4f8b9142333f, type: 3}
+  - {fileID: 1427954500, guid: ef44dc55419c91f429ca4f8b9142333f, type: 3}
+  - {fileID: -836300605, guid: ef44dc55419c91f429ca4f8b9142333f, type: 3}
+  - {fileID: -1197802273, guid: ef44dc55419c91f429ca4f8b9142333f, type: 3}
+  - {fileID: 928934082, guid: 26990ce71a70760439fc0b433c0b5c45, type: 3}
+  - {fileID: 604122688, guid: 26990ce71a70760439fc0b433c0b5c45, type: 3}
+  - {fileID: 2045726819, guid: 2f69aae8d2ca6f040a1f30bc2cac5d5e, type: 3}
+  - {fileID: 1494724567, guid: 2f69aae8d2ca6f040a1f30bc2cac5d5e, type: 3}
+  - {fileID: -1290429450, guid: 9475bb199f53b2541941a4badcb07f5f, type: 3}
+  - {fileID: 1578599997, guid: 9475bb199f53b2541941a4badcb07f5f, type: 3}
+  - {fileID: -1860741680, guid: c0db1ada5f3dc0846a2675053f617fe1, type: 3}
+  - {fileID: 1566417066, guid: c0db1ada5f3dc0846a2675053f617fe1, type: 3}
+  - {fileID: 21300000, guid: 2dd92edbf8b25424db7c3fca80e56652, type: 3}
+  - {fileID: 179422723, guid: 97b23bac9edb5844da911c195094f155, type: 3}
+  - {fileID: -1316083149, guid: 97b23bac9edb5844da911c195094f155, type: 3}
+  - {fileID: 784333641, guid: c193f7af529a4104bb415d14fb1973b4, type: 3}
+  - {fileID: -1198524164, guid: c193f7af529a4104bb415d14fb1973b4, type: 3}
+  - {fileID: -1294374151, guid: c193f7af529a4104bb415d14fb1973b4, type: 3}
+  - {fileID: -2108182920, guid: c193f7af529a4104bb415d14fb1973b4, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - dikenler_new_3
+  - dikenler_new_2
+  - dikenler_new_1
+  - dikenler_new_0
+  - tup
+  - kanca_2
+  - kanca_3
+  - kanca_0
+  - kanca_1
+  - KUTU_DUZELTME
+  - bayrak_4
+  - bayrak_5
+  - bayrak_0
+  - bayrak_1
+  - bayrak_2
+  - bayrak_3
+  - trapdoor (1)_1
+  - trapdoor (1)_0
+  - BASINC_0
+  - BASINC_1
+  - vantilator_duzeltme_1
+  - vantilator_duzeltme_0
+  - zpkn_1
+  - zpkn_0
+  - laser_son
+  - dugme_0
+  - dugme_1
+  - KAPI_3
+  - KAPI_2
+  - KAPI_1
+  - KAPI_0
+  m_RenderDataMap: {}
+  m_Tag: TrapsSpriteAtlas
+  m_IsVariant: 0
