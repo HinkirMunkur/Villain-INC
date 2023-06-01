@@ -249,6 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ceea2e17a1852848a8adebf991481d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _subjectBasic: {fileID: 2478162064733915462}
 --- !u!1 &1649139035209791340
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,6 +371,7 @@ MonoBehaviour:
   subjectStateMachineController: {fileID: 3150285434639228433}
   handTriggerHandler: {fileID: 2763602488612330755}
   subjectDieBehaviour: {fileID: 749670623969412260}
+  subjectAudio: {fileID: 5547315681153120186}
 --- !u!50 &2478162064733915481
 Rigidbody2D:
   serializedVersion: 4
