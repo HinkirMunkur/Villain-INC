@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 0769dca1b8aff2043a2e8f2f3d43b7a2, type: 3}
   audioName: Card
-  volume: 1
+  volume: 0.5
+  isLooping: 0

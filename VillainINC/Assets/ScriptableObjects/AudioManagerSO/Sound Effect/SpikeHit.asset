@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 243a73a5bfb37e74992450e92241e2e1, type: 3}
   audioName: SpikeHit
-  volume: 1
+  volume: 0.5
+  isLooping: 0

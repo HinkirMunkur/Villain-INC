@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 6ca67e3ce328a3d4480692c5c7e17870, type: 3}
   audioName: SpearHit
-  volume: 1
+  volume: 0.5
+  isLooping: 0
