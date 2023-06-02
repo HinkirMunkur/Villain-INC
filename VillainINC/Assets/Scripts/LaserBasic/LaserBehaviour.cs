@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using System;
+using Munkur;
 using UnityEngine.Serialization;
 
 public class LaserBehaviour : MonoBehaviour
@@ -55,6 +56,7 @@ public class LaserBehaviour : MonoBehaviour
     }
     private IEnumerator ShootLaser()
     {
+        AudioManager.Instance.PlaySoundEffect("Laser");
         _laserLineRenderer.gameObject.SetActive(true);
         _laserStart.SetActive(true);
         _laserEnd.SetActive(true);
@@ -72,6 +74,7 @@ public class LaserBehaviour : MonoBehaviour
                 if (hit.collider.CompareTag("Player"))
                 {
                     _laserBasic.Slay(hit.transform.GetComponent<SubjectBasic>());
+                    AudioManager.Instance.PlaySoundEffect("HitByLaser");
                 }
 
                 _laserEnd.transform.position = hit.point;

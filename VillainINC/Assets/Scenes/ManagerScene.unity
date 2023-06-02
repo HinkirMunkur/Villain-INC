@@ -366,7 +366,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5d382cb8026d737418cabfd8a8c8f599, type: 2}
   - {fileID: 11400000, guid: 9b7edb0370f237e4ead1cfbdc44f28b9, type: 2}
   _soundEffectList:
+  - {fileID: 11400000, guid: 0fec93bc7104f424fb63506bce910c15, type: 2}
+  - {fileID: 11400000, guid: 952febf57ae883544ad5b3a27b74fdf4, type: 2}
+  - {fileID: 11400000, guid: 3b758dad1590c8d438e309a47031cf6b, type: 2}
+  - {fileID: 11400000, guid: bf94c33c6db7b4c49a67d54ca9657961, type: 2}
+  - {fileID: 11400000, guid: 0880be6ba49a6fc419107be430a2ce4d, type: 2}
+  - {fileID: 11400000, guid: 079aaec0adb1bcd4d90a6ba6c015b85a, type: 2}
+  - {fileID: 11400000, guid: e7ce9124a1298624385a89478d0dbc38, type: 2}
+  - {fileID: 11400000, guid: 884686ee8c4fd734b9e6a5ae541ba976, type: 2}
   - {fileID: 11400000, guid: 5fd1a72aad44e644e96666aefdc24237, type: 2}
+  - {fileID: 11400000, guid: c33c059ab6b89744ca1bb3e7b3278ca2, type: 2}
   _musicAudioSource: {fileID: 6762879008391906924}
   _soundEffectAudioSource: {fileID: 6762879008391906927}
   _customSoundEffectAudioSource: {fileID: 6762879008391906926}

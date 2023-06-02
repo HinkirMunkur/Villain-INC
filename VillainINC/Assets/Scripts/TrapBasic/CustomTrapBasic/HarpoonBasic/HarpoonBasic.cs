@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using Munkur;
 
 public class HarpoonBasic : ClickableTrapBasic
 {
@@ -7,7 +8,7 @@ public class HarpoonBasic : ClickableTrapBasic
     [SerializeField] private Vector2 forceToSpear;
     [SerializeField] private bool isRotating;
     [SerializeField] private float angleToRotate;
-
+    
     private float currentAngle;
     private Coroutine StopRotation;
 
@@ -24,6 +25,8 @@ public class HarpoonBasic : ClickableTrapBasic
 
     public override void TrapClicked()
     {
+        AudioManager.Instance.PlaySoundEffect("Spear");
+
         if (isRotating) 
         {
             StopCoroutine(StopRotation);

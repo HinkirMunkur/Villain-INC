@@ -1,4 +1,5 @@
 using UnityEngine;
+using Munkur;
 
 public class CraneBasic : ClickableTrapBasic
 {
@@ -12,6 +13,7 @@ public class CraneBasic : ClickableTrapBasic
 
     public override void TrapClicked()
     {
+        AudioManager.Instance.PlaySoundEffect("BoxDrop");
         this.PlayAndCheckAnimationFinish(animator, "Do", () =>
         {
             boxBasic.SetBoxDynamic();

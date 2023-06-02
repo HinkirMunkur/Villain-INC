@@ -1,4 +1,5 @@
 using UnityEngine;
+using Munkur;
 
 public class TeleportBehaviour : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class TeleportBehaviour : MonoBehaviour
     
     public void Teleport(Collider2D col) 
     {
+        AudioManager.Instance.PlaySoundEffect("Portal");
         _littleParticles.Play(true);
         col.transform.position = _portalBasic.OtherPortal.TeleportPoint.position;
 
