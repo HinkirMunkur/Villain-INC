@@ -760,6 +760,22 @@ PrefabInstance:
       propertyPath: force.y
       value: -20000
       objectReference: {fileID: 0}
+    - target: {fileID: 1008570023456232627, guid: 99ce603e84e23c543b6f49ef31b12ebd, type: 3}
+      propertyPath: m_Size.x
+      value: 0.15481845
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008570023456232627, guid: 99ce603e84e23c543b6f49ef31b12ebd, type: 3}
+      propertyPath: m_Size.y
+      value: 0.15358886
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008570023456232627, guid: 99ce603e84e23c543b6f49ef31b12ebd, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0005095452
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008570023456232627, guid: 99ce603e84e23c543b6f49ef31b12ebd, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.00024777278
+      objectReference: {fileID: 0}
     - target: {fileID: 2723011540727084290, guid: 99ce603e84e23c543b6f49ef31b12ebd, type: 3}
       propertyPath: rayCamera
       value: 
