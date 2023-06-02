@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _portalBasic: {fileID: 1865942844971818601}
   _pushSpeed: 30
-  _littleParticles: {fileID: 0}
+  _littleParticles: {fileID: 8402313575680372222}
 --- !u!1 &2825285882854574456
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,5 +613,10 @@ PrefabInstance:
 --- !u!4 &5701075072050247868 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7230968944188433466, guid: a3a669bce1abb634cb65a7f1d1d88280, type: 3}
+  m_PrefabInstance: {fileID: 3118679395738852486}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8402313575680372222 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6907613412982190456, guid: a3a669bce1abb634cb65a7f1d1d88280, type: 3}
   m_PrefabInstance: {fileID: 3118679395738852486}
   m_PrefabAsset: {fileID: 0}
