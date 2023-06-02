@@ -286,6 +286,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6992673298028712646, guid: edac85d04fcdcd14e81f526fd117c5f9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.077
+      objectReference: {fileID: 0}
     - target: {fileID: 7127586100366503864, guid: edac85d04fcdcd14e81f526fd117c5f9, type: 3}
       propertyPath: totalSpawnAmount
       value: 2
