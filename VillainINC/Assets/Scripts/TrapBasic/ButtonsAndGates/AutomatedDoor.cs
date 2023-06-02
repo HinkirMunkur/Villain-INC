@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Munkur;
 using UnityEngine;
 
 public class AutomatedDoor : AutomaticSystem
@@ -8,6 +9,7 @@ public class AutomatedDoor : AutomaticSystem
     [SerializeField] private BoxCollider2D doorCollider;
     public override void RunSystem()
     {
+        AudioManager.Instance.PlaySoundEffect("Door");
         doorAnimator.Play("DoorOpening");
         doorCollider.enabled = false;
     }
