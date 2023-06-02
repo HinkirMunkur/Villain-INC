@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: f5514f81594d88540a1c38f1de2743d1, type: 3}
   audioName: Portal
-  volume: 1
+  volume: 0.5
+  isLooping: 0

@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using Munkur;
 using UnityEngine;
@@ -11,13 +13,17 @@ public class FanBasic : ClickableTrapBasic
     public Vector2 FanForceVector => fanForceVector;
 
     [SerializeField] private Animator animator;
+
+    [SerializeField] private AudioSource audioSource;
     
     private bool isOpen = false;
+
+    
     public override void TrapClicked()
     {
         if (isOpen)
         {
-            AudioManager.Instance.StopMusic();
+            audioSource.Stop();
             
             isOpen = false;
             boxCollider2D.enabled = false;
@@ -29,7 +35,7 @@ public class FanBasic : ClickableTrapBasic
         }
         else
         {
-            AudioManager.Instance.PlaySoundEffect("Fan");
+            audioSource.Play();
             
             isOpen = true;
             boxCollider2D.enabled = true;
@@ -40,4 +46,6 @@ public class FanBasic : ClickableTrapBasic
             }
         }
     }
+    
+
 }

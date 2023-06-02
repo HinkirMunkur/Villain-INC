@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Sound Effect", menuName = "Sound Effect")]
@@ -10,4 +8,6 @@ public class SoundEffect : ScriptableObject
 
     [Range(0f, 1f)]
     public float volume;
+
+    public bool isLooping = false;
 }
