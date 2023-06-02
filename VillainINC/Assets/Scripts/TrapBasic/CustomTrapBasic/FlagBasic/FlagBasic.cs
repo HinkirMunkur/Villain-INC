@@ -18,7 +18,7 @@ public class FlagBasic : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            AudioManager.Instance.PlaySoundEffect("Flag");
+            AudioManager.Instance.PlayCustomSoundEffect("B4-G3");
             
             if (oneTime)
             {
