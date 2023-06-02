@@ -1,3 +1,4 @@
+using Munkur;
 using UnityEngine;
 
 public class SpikeBasic : ClickableTrapBasic, ISlayer
@@ -9,11 +10,13 @@ public class SpikeBasic : ClickableTrapBasic, ISlayer
 
     public void Slay(SubjectBasic subjectBasic)
     {
+        AudioManager.Instance.PlaySoundEffect("SpikeHit");
         subjectBasic.SubjectDieBehaviour.BeforeSubjectDie(eSubjectAnimation);
     }
 
     public override void TrapClicked()
     {
+        AudioManager.Instance.PlaySoundEffect("Spike");
         slayCollider.enabled = true;
         this.PlayAndCheckAnimationFinish(animator, "Do", () =>
         {

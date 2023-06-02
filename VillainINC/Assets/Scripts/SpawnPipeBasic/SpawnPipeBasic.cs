@@ -32,6 +32,7 @@ public class SpawnPipeBasic : MonoBehaviour
     {
         if (totalSpawnAmount > 0)
         {
+            AudioManager.Instance.PlaySoundEffect("Spawn");
             SubjectBasic spawnedSubjectBasic = Instantiate(DataSOManager.Instance.GameDataSO
                 .SubjectBasicList[PlayerPrefs.GetInt("SELECTED_SUBJECT", 0)], spawnPoint.position, Quaternion.identity);
             spawnedSubjectBasic.Init(this);

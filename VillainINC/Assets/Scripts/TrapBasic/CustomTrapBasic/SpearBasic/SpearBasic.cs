@@ -1,4 +1,5 @@
 using System.Collections;
+using Munkur;
 using UnityEngine;
 
 public class SpearBasic : TrapBasic, ISlayer
@@ -8,6 +9,7 @@ public class SpearBasic : TrapBasic, ISlayer
     [SerializeField] private BoxCollider2D spearBodyCollider2D;
     public void Slay(SubjectBasic subjectBasic)
     {
+        AudioManager.Instance.PlaySoundEffect("SpearHit");
         subjectBasic.SubjectDieBehaviour.BeforeSubjectDie(ESubjectAnimation.DIE_SHOT);
     }
 
