@@ -1,6 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class CardBasic : MonoBehaviour
@@ -14,10 +13,22 @@ public class CardBasic : MonoBehaviour
     [SerializeField] private PickupTriggerHandler _pickupTriggerHandler;
     public PickupTriggerHandler PickupTriggerHandler => _pickupTriggerHandler;
 
+    [SerializeField] private float shakeDuration;
+    
     private void Awake() 
     {
         bool isTaken = Convert.ToBoolean(PlayerPrefs.GetInt(_cardName, 1));
 
         gameObject.SetActive(isTaken);    
+    }
+
+    private void Start()
+    {
+        CardShake();
+    }
+
+    private void CardShake()
+    {
+        transform.DOShakePosition(shakeDuration, 0.01f, 1, 0f).SetLoops(-1);
     }
 }

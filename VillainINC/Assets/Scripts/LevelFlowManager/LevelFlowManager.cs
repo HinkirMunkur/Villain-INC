@@ -21,15 +21,18 @@ public class LevelFlowManager : Singletonn<LevelFlowManager>
 
     public void ExecuteSuccessPriorities()
     {
-        executer.Execute(priorityHolder, (result) =>
+        if (!FlagBasic.IsSubjectTouchFlag)
         {
-            if (result)
+            executer.Execute(priorityHolder, (result) =>
             {
-                LevelController.Instance.SetCurrentSavedLevelIndex(LevelController.Instance.GetCurrentLevelIndex()+1);
-                TransitionManager.Instance.EndSceneTransition(LevelController.Instance
-                    .GetSceneNameWithIndex(LevelController.Instance.GetCurrentSavedLevelIndex()));
-            }
-        });
+                if (result)
+                {
+                    LevelController.Instance.SetCurrentSavedLevelIndex(LevelController.Instance.GetCurrentLevelIndex()+1);
+                    TransitionManager.Instance.EndSceneTransition(LevelController.Instance
+                        .GetSceneNameWithIndex(LevelController.Instance.GetCurrentSavedLevelIndex()));
+                }
+            });   
+        }
     }
     
 }
