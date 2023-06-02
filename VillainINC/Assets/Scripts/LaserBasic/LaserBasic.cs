@@ -1,3 +1,4 @@
+using Munkur;
 using UnityEngine;
 
 public class LaserBasic : AutomaticSystem, ISlayer
@@ -9,6 +10,7 @@ public class LaserBasic : AutomaticSystem, ISlayer
     
     public void Slay(SubjectBasic subjectBasic)
     {
+        AudioManager.Instance.PlaySoundEffect("HitByLaser");
         subjectBasic.SubjectDieBehaviour.BeforeSubjectDie(ESubjectAnimation.DIE_SHOT);
     }
     

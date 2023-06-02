@@ -10,6 +10,7 @@ public class SpikeBasic : ClickableTrapBasic, ISlayer
 
     public void Slay(SubjectBasic subjectBasic)
     {
+        AudioManager.Instance.PlaySoundEffect("SpikeHit");
         subjectBasic.SubjectDieBehaviour.BeforeSubjectDie(eSubjectAnimation);
     }
 
