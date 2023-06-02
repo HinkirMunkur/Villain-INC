@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 563e0787e76c6f1469d7b91f552d6860, type: 3}
   audioName: Puzzle
-  volume: 1
+  volume: 0.1
   pitch: 1
   isLooping: 1
   delay: 0

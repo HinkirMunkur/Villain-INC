@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: a5902aba3f5a5ee43ad3d01c8a015f00, type: 3}
   audioName: Credits
-  volume: 1
+  volume: 0.1
   pitch: 1
   isLooping: 1
   delay: 0

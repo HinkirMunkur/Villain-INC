@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 2a12fc455dfdf4c47a773bff608b70fb, type: 3}
   audioName: Cutscene
-  volume: 1
+  volume: 0.1
   pitch: 1
   isLooping: 1
   delay: 0

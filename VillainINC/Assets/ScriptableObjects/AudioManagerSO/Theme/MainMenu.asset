@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 857aa0b1ab687ce4fb001dfb19b4a49e, type: 3}
   audioName: MainMenu
-  volume: 1
+  volume: 0.1
   pitch: 1
   isLooping: 1
   delay: 0
