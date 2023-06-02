@@ -18,4 +18,18 @@ public class SubjectAudio : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
         }
     }
+
+    public void PushAudio() 
+    {
+        StartCoroutine(PushAudioCoroutine());
+    }
+
+    private IEnumerator PushAudioCoroutine() 
+    {
+        while (_subjectBasic.SubjectStateMachineController.GetCurrentState() == ESubjectState.PUSH) 
+        {
+            AudioManager.Instance.PlaySoundEffect("Pushing");
+            yield return new WaitForSeconds(0.5f);
+        }
+    }
 }

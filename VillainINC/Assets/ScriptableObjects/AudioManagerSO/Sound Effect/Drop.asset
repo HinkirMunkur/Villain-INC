@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d15a2a507ecc66488416301f21f9a64, type: 3}
-  m_Name: Card
+  m_Name: Drop
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: b95d9dd7c26cd944199f54db6a9684ab, type: 3}
-  audioName: Card
-  volume: 0.5
-  isLooping: 0
+  audioClip: {fileID: 8300000, guid: 560184be236045447a96f3eda769e272, type: 3}
+  audioName: Drop
+  volume: 1
