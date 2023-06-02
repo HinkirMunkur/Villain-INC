@@ -1,4 +1,5 @@
 using UnityEngine;
+using Munkur;
 
 public class BoxBasic : TrapBasic, ISlayer
 {
@@ -18,6 +19,7 @@ public class BoxBasic : TrapBasic, ISlayer
     
     public void Slay(SubjectBasic subjectBasic)
     {
+        AudioManager.Instance.PlaySoundEffect("BoxHit");
         subjectBasic.SubjectDieBehaviour.BeforeSubjectDie(ESubjectAnimation.DIE_CRUSHED);
     }
 }
