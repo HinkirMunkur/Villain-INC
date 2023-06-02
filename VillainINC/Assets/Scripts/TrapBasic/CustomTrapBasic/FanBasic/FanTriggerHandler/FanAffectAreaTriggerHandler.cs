@@ -1,5 +1,4 @@
 using System.Collections;
-using Munkur;
 using UnityEngine;
 
 public class FanAffectAreaTriggerHandler : MonoBehaviour
@@ -26,8 +25,6 @@ public class FanAffectAreaTriggerHandler : MonoBehaviour
 
     private IEnumerator AddForceCont(Rigidbody2D objectRigidbody)
     {
-        AudioManager.Instance.PlaySoundEffect("Fan");
-
         while (isObjectInFanArea)
         {
             objectRigidbody.AddForce(fanBasic.FanForceVector * Time.deltaTime);

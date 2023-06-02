@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Munkur;
 using UnityEngine;
 
 public class FanBasic : ClickableTrapBasic
@@ -16,6 +17,8 @@ public class FanBasic : ClickableTrapBasic
     {
         if (isOpen)
         {
+            AudioManager.Instance.StopMusic();
+            
             isOpen = false;
             boxCollider2D.enabled = false;
             animator.enabled = false;
@@ -26,6 +29,8 @@ public class FanBasic : ClickableTrapBasic
         }
         else
         {
+            AudioManager.Instance.PlaySoundEffect("Fan");
+            
             isOpen = true;
             boxCollider2D.enabled = true;
             animator.enabled = true;

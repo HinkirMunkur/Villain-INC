@@ -19,6 +19,7 @@ public class FlagBasic : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             AudioManager.Instance.PlaySoundEffect("Flag");
+            
             if (oneTime)
             {
                 oneTime = false;
