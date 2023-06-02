@@ -1,4 +1,5 @@
 using UnityEngine;
+using Munkur;
 
 public class FeetTriggerHandler : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class FeetTriggerHandler : MonoBehaviour
     {
         if (col.CompareTag("Ground") || col.CompareTag("PushBox"))
         {
+            AudioManager.Instance.PlaySoundEffect("Land");
             subjectBasic.MovementBehaviour.IsInAir = false;
             subjectBasic.HandTriggerHandler.gameObject.SetActive(true);
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.RUN);
