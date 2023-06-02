@@ -381,6 +381,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b8f240e2eca432e47b6f56796ec7af17, type: 2}
   - {fileID: 11400000, guid: 46a8af2788a4fc747813c5c0ffcaf169, type: 2}
   - {fileID: 11400000, guid: 2df944cd3a9c34243ae3c6e9385eb719, type: 2}
+  - {fileID: 11400000, guid: 1b141c0a3ed3f3d4c8cba6434489b4d1, type: 2}
+  - {fileID: 11400000, guid: 7729ed63a46bacd4eabbeb05bdb85dba, type: 2}
   _musicAudioSource: {fileID: 6762879008391906924}
   _soundEffectAudioSource: {fileID: 6762879008391906927}
   _customSoundEffectAudioSource: {fileID: 6762879008391906926}
