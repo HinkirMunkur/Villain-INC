@@ -13,6 +13,7 @@ public class PushState : SubjectState
 
     public override void Do()
     {
+        subjectBasic.SubjectAudio.PushAudio();
         subjectBasic.MovementBehaviour.PushSteady();
         subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.PUSH);
 
