@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRigidbody2D: {fileID: 678588338180747441}
+  force: {x: 0, y: 0}
 --- !u!50 &678588338180747441
 Rigidbody2D:
   serializedVersion: 4
@@ -305,7 +306,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 3c47c990d4ab7b04eae614f16193815a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
