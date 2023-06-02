@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using Munkur;
 
 public class SubjectUIController : MonoBehaviour
 {
@@ -68,6 +69,8 @@ public class SubjectUIController : MonoBehaviour
 
     public void CloseSubjectUIController()
     {
+        AudioManager.Instance.PlaySoundEffect("Back");
+
         if (selectedSubjectIndex == 0)
         {
             subjectBasicUiList[selectedSubjectIndex+1].gameObject.SetActive(false);
@@ -105,9 +108,12 @@ public class SubjectUIController : MonoBehaviour
     {
         if (selectedSubjectIndex == 0)
         {
+            AudioManager.Instance.PlaySoundEffect("No");
             leftClickable.transform.DOShakePosition(shakeButtonDuration, shakeButtonStrength);
             return;
         }
+
+        AudioManager.Instance.PlaySoundEffect("Click");
 
         if (selectedSubjectIndex+1 <= subjectBasicUiList.Count - 1)
         {
@@ -135,9 +141,12 @@ public class SubjectUIController : MonoBehaviour
     {
         if (selectedSubjectIndex == subjectBasicUiList.Count - 1)
         {
+            AudioManager.Instance.PlaySoundEffect("No");
             rightClickable.transform.DOShakePosition(shakeButtonDuration, shakeButtonStrength);
             return;
         }
+
+        AudioManager.Instance.PlaySoundEffect("Click");
 
         subjectBasicUiList[selectedSubjectIndex + 1].transform.DOMove(centerTransform.position, moveDuration);
         subjectBasicUiList[selectedSubjectIndex + 1].transform.localScale = Vector3.one * 4; 
@@ -193,6 +202,7 @@ public class SubjectUIController : MonoBehaviour
         {
             if (subjectBasicUiList[selectedSubjectIndex].TryToBuySubject())
             {
+                AudioManager.Instance.PlaySoundEffect("Buy");
                 // Buy -> Use
                 cardAmountText.transform.parent.gameObject.SetActive(false);
                 purchaseText.gameObject.SetActive(true);
@@ -200,11 +210,13 @@ public class SubjectUIController : MonoBehaviour
             }
             else
             {
+                AudioManager.Instance.PlaySoundEffect("No");
                 buyClickable.transform.DOShakePosition(shakeButtonDuration, shakeButtonStrength);
             }
         }
         else if(skinData == 1)
         {
+            AudioManager.Instance.PlaySoundEffect("SelectSkin");
             // Use -> Used
             cardAmountText.transform.parent.gameObject.SetActive(false);
             purchaseText.gameObject.SetActive(true);
@@ -222,6 +234,7 @@ public class SubjectUIController : MonoBehaviour
         }
         else if (skinData == 2)
         {
+            AudioManager.Instance.PlaySoundEffect("No");
             buyClickable.transform.DOShakePosition(shakeButtonDuration, shakeButtonStrength);
         }
         
