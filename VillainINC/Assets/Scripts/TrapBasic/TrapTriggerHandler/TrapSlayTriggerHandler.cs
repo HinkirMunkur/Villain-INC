@@ -11,6 +11,8 @@ public class TrapSlayTriggerHandler : MonoBehaviour
         {
             if (trapBasic is ISlayer)
             {
+                Vibrator.Vibrate();
+                Vibrator.Vibrate(1000);
                 ((ISlayer)trapBasic).Slay(col.GetComponentInParent<SubjectBasic>());
             }
         }
