@@ -546,7 +546,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5}
+  m_Offset: {x: 0, y: -0.50349045}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -557,7 +557,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9, y: 0.15}
+  m_Size: {x: 9, y: 0.14301911}
   m_EdgeRadius: 0
 --- !u!1001 &171543148
 PrefabInstance:
@@ -1268,6 +1268,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 944976346}
     m_Modifications:
+    - target: {fileID: 3425088442192597108, guid: 650e43f4f97b82241be81e13786dc176, type: 3}
+      propertyPath: m_Volume
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 3425088442689229485, guid: 650e43f4f97b82241be81e13786dc176, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2713,7 +2717,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.852385, y: -0.842551}
+  m_Offset: {x: -2.8246675, y: -0.842551}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2724,7 +2728,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4383011, y: 0.19255495}
+  m_Size: {x: 0.38286567, y: 0.19255495}
   m_EdgeRadius: 0
 --- !u!114 &1604580555
 MonoBehaviour:
@@ -3208,12 +3212,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6748307670629380801, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6748307670808810531, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
       propertyPath: spawnPipeBasic
       value: 
       objectReference: {fileID: 2058622153}
+    - target: {fileID: 6748307671022850617, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 14.61
+      objectReference: {fileID: 0}
     - target: {fileID: 6748307671078143683, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
       propertyPath: m_IsActive
       value: 1
