@@ -22,6 +22,7 @@ public class StoreGameSceneButtonActivity : GameSceneButtonActivity
 
     protected override void Clicked()
     {
+        AudioManager.Instance.PlaySoundEffect("Click");
         OpenStoreUI();
     }
 
