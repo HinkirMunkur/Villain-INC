@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d15a2a507ecc66488416301f21f9a64, type: 3}
   m_Name: Buy
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: 62f44da39ccd5ef4d8312622508af633, type: 3}
+  audioClip: {fileID: 8300000, guid: 9eaed04a04070a04bb0cb9235fc864e8, type: 3}
   audioName: Buy
-  volume: 0.53
+  volume: 0.5
   isLooping: 0

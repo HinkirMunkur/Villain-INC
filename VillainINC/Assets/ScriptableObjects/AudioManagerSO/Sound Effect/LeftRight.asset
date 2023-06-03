@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d15a2a507ecc66488416301f21f9a64, type: 3}
   m_Name: LeftRight
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: 858ad7351fea6174f98d3c20ab65ff48, type: 3}
+  audioClip: {fileID: 8300000, guid: 62f44da39ccd5ef4d8312622508af633, type: 3}
   audioName: Click
   volume: 0.51
   isLooping: 0
