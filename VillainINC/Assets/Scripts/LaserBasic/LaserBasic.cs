@@ -10,7 +10,7 @@ public class LaserBasic : AutomaticSystem, ISlayer
     
     public void Slay(SubjectBasic subjectBasic)
     {
-        AudioManager.Instance.PlaySoundEffect("HitByLaser");
+        AudioManager.Instance.PlaySoundEffect("LaserHit");
         subjectBasic.SubjectDieBehaviour.BeforeSubjectDie(ESubjectAnimation.DIE_SHOT);
     }
     

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 946db1c3ff9a2bf40bd279db37d45b4d, type: 3}
   audioName: LaserHit
-  volume: 1
+  volume: 0.8
   isLooping: 0
