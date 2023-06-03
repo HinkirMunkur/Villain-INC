@@ -383,6 +383,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2df944cd3a9c34243ae3c6e9385eb719, type: 2}
   - {fileID: 11400000, guid: 1b141c0a3ed3f3d4c8cba6434489b4d1, type: 2}
   - {fileID: 11400000, guid: 7729ed63a46bacd4eabbeb05bdb85dba, type: 2}
+  - {fileID: 11400000, guid: 1d47f7512f1e94d41b11eeca37ae2f68, type: 2}
+  - {fileID: 11400000, guid: 3692da109cad7614fb581fb050c4ec9e, type: 2}
+  - {fileID: 11400000, guid: caa229d87843d5b46825f237491df239, type: 2}
+  - {fileID: 11400000, guid: f1cbc718a27f4c0419b1d2004e66b274, type: 2}
+  - {fileID: 11400000, guid: 016ebfa5d16934441a8b1297b264b009, type: 2}
   _musicAudioSource: {fileID: 6762879008391906924}
   _soundEffectAudioSource: {fileID: 6762879008391906927}
   _customSoundEffectAudioSource: {fileID: 6762879008391906926}
