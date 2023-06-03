@@ -48,7 +48,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4
   m_IsActive: 1
 --- !u!4 &7103772041902287090
 Transform:
@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32f13bf4eed02bd4eac6b43f41cf3f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  circleTarget: {fileID: 0}
 --- !u!61 &7103772041938805302
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FallState : SubjectState
@@ -7,8 +5,6 @@ public class FallState : SubjectState
     public override void Do()
     {
         subjectBasic.SubjectAnimationController.PlayAnimation(ESubjectAnimation.FALL);
-
-        Debug.Log(subjectBasic.MovementBehaviour.IsInAir);
 
         if (!subjectBasic.MovementBehaviour.IsInAir) 
         {

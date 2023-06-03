@@ -22,11 +22,6 @@ namespace Munkur
 
         public bool TransitionStarted { get; set; } = false;
 
-        private void Start()
-        {
-            StartSceneTransition();
-        }
-
         public void StartSceneTransition()
         {
             StartCoroutine(ExecuteStartSceneTransition());

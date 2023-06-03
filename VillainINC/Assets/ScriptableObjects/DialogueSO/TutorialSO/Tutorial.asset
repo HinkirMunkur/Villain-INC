@@ -20,7 +20,7 @@ MonoBehaviour:
   - 0.1
   defTextAudios:
   - {fileID: 8300000, guid: 450a1d6684826df4d9fe9d0932b1ded1, type: 3}
-  defTextEffects: 06000000
+  defTextEffects: 00000000
   defDiffColor:
   - {r: 1, g: 1, b: 1, a: 1}
   textWriteSpeeds: []

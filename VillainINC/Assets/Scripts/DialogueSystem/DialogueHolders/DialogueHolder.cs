@@ -108,8 +108,8 @@ public abstract class DialogueHolder : MonoBehaviour
 
     protected virtual RealDialogue OnCustomDialogueActions(int index)
     {
-        TextColorController.Instance.ChangeWholeColor(dialogueHolderText, 
-            realDialogue.diffColor[index]);
+        //TextColorController.Instance.ChangeWholeColor(dialogueHolderText, 
+          //  realDialogue.diffColor[index]);
         
         SetEtextEffects(realDialogue.textEffects[index]);
 
