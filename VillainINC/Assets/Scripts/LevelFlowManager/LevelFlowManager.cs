@@ -34,5 +34,4 @@ public class LevelFlowManager : Singletonn<LevelFlowManager>
             });   
         }
     }
-    
 }

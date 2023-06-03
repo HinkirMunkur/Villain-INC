@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SpawnPipeBasic : MonoBehaviour
 {
-    //[SerializeField] private SubjectBasic subjectBasicPrefab;
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private int totalSpawnAmount;
     public int TotalSpawnAmount => totalSpawnAmount;

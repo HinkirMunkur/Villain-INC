@@ -13,18 +13,11 @@ MonoBehaviour:
   m_Name: Tutorial
   m_EditorClassIdentifier: 
   sentences:
-  - YAZILAR ICIN "SPACE"
-  - DENEGI OLDUR
-  - 'DENEK BAYRAGA ULASIRSA '
-  - KAYBEDERSIN
-  - TUZAKLARI KULLAN
-  - AMACIN BELLI SAYIDAKI DENEGI OLDURMEK
-  - TOPLAM DENEK SAYISI TUPTE YAZIYOR
-  - BOLUMU YENILEMEK ICIN "R"
-  characterCounts: 0000000000000000000000000000000000000000000000000000000000000000
+  - DON'T LET HIM GET TO THE FLAG
+  characterCounts: 00000000
   defOverWrites: 0
   defTextWriteSpeeds:
-  - 0.2
+  - 0.1
   defTextAudios:
   - {fileID: 8300000, guid: 3a301dc34e911c94bb8534ac8d255f0d, type: 3}
   defTextEffects: 06000000
