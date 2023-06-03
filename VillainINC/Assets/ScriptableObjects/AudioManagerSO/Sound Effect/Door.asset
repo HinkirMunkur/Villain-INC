@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Door
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: e8e93cb564ec87d498357bf84ee3aab8, type: 3}
-  audioName: 
+  audioName: Door
   volume: 0.1
   isLooping: 0

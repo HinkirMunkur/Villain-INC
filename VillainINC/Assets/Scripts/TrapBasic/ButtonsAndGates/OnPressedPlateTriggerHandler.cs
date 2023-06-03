@@ -16,8 +16,8 @@ public class OnPressedPlateTriggerHandler : MonoBehaviour
             return;
         }
 
-        pressurePlateBasic.PlateAnimator.Play("PressurePlate");
-        AudioManager.Instance.PlaySoundEffect("");
+        pressurePlateBasic.PlateAnimator.Play("PressedPlate");
+        AudioManager.Instance.PlaySoundEffect("PressurePlate");
         itemsOnTop++;
         pressurePlateBasic.AutomaticSystem.RunSystem();
     }

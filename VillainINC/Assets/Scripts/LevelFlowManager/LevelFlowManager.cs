@@ -9,6 +9,8 @@ public class LevelFlowManager : Singletonn<LevelFlowManager>
 
     public Action OnStartGame;
 
+    public bool IsLevelFinished { get; set; } = false;
+    
     private void Start()
     {
         TransitionManager.Instance.StartSceneTransition();
@@ -27,6 +29,8 @@ public class LevelFlowManager : Singletonn<LevelFlowManager>
             {
                 if (result)
                 {
+                    IsLevelFinished = true;
+                    
                     LevelController.Instance.SetCurrentSavedLevelIndex(LevelController.Instance.GetCurrentLevelIndex()+1);
                     TransitionManager.Instance.EndSceneTransition(LevelController.Instance
                         .GetSceneNameWithIndex(LevelController.Instance.GetCurrentSavedLevelIndex()));
