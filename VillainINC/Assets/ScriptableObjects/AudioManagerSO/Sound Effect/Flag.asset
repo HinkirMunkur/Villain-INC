@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: c87f1fd36c9d81f4bbabd674cd2f05ef, type: 3}
   audioName: Flag
-  volume: 0.5
+  volume: 0.02
   isLooping: 0

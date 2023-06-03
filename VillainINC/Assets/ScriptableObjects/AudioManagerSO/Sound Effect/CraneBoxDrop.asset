@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 21dfbd08b439eb242a82193d1a20a510, type: 3}
   audioName: BoxDrop
-  volume: 0.8
+  volume: 1
   isLooping: 0

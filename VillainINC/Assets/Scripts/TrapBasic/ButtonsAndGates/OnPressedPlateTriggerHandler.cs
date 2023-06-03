@@ -16,10 +16,10 @@ public class OnPressedPlateTriggerHandler : MonoBehaviour
             return;
         }
 
+        pressurePlateBasic.PlateAnimator.Play("PressurePlate");
         AudioManager.Instance.PlaySoundEffect("");
         itemsOnTop++;
         pressurePlateBasic.AutomaticSystem.RunSystem();
-        pressurePlateBasic.PlateAnimator.Play("PressedPlate");
     }
 
     private void OnTriggerExit2D(Collider2D other)

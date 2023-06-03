@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: afc9421629e39d147843ea5b5e0f4207, type: 3}
   audioName: PressurePlate
-  volume: 0.6
+  volume: 1
   isLooping: 0

@@ -65,6 +65,11 @@ public abstract class DialogueHolder : MonoBehaviour
     
     private void OnDestroy()
     {
+        if (DialogueManager.Instance == null)
+        {
+            return;
+        }
+        
         DialogueManager.Instance.OnStartDialogueActions -= OnStartDialogueActions;
         DialogueManager.Instance.OnCustomDialogueActions -= OnCustomDialogueActions;
         DialogueManager.Instance.OnEndDialogueActions -= OnEndDialogueActions;
