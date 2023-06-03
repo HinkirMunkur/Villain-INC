@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 37e6600ae843e7d4cb468cc52a164576, type: 3}
   audioName: SelectSkin
-  volume: 0.47
+  volume: 0.35
   isLooping: 0

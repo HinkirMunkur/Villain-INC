@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Munkur;
 
 public class OnPressedPlateTriggerHandler : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class OnPressedPlateTriggerHandler : MonoBehaviour
             return;
         }
 
+        AudioManager.Instance.PlaySoundEffect("");
         itemsOnTop++;
         pressurePlateBasic.AutomaticSystem.RunSystem();
         pressurePlateBasic.PlateAnimator.Play("PressedPlate");
@@ -27,7 +29,6 @@ public class OnPressedPlateTriggerHandler : MonoBehaviour
         {
             pressurePlateBasic.AutomaticSystem.ExitSystem();
             pressurePlateBasic.PlateAnimator.Play("ReleasedPlate");
-
         }
     }
 }

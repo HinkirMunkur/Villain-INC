@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d15a2a507ecc66488416301f21f9a64, type: 3}
   m_Name: BoxHit
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: f0d7ca0d0a62fc9419d079fe68c3a6e2, type: 3}
+  audioClip: {fileID: 8300000, guid: b2b9fcaac2f35fa44b476cc248059072, type: 3}
   audioName: BoxHit
-  volume: 0.5
+  volume: 0.3
   isLooping: 0
