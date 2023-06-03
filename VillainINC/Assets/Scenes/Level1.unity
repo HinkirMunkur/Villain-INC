@@ -955,7 +955,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.5}
+  m_Offset: {x: 0, y: -0.50502807}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -966,7 +966,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9, y: 0.15}
+  m_Size: {x: 9, y: 0.13994381}
   m_EdgeRadius: 0
 --- !u!114 &678439764 stripped
 MonoBehaviour:
@@ -3005,12 +3005,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6748307670629380801, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6748307670808810531, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
       propertyPath: spawnPipeBasic
       value: 
       objectReference: {fileID: 678439764}
+    - target: {fileID: 6748307671022850617, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6748307671078143683, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
       propertyPath: m_IsActive
       value: 1
