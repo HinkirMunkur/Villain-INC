@@ -36,13 +36,4 @@ public class StoreUIController : Singletonn<StoreUIController>
     {
         cardAmountText.text = GetCardAmount().ToString();
     }
-    
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            SetCardAmount(1);
-            cardAmountText.text = GetCardAmount().ToString();
-        }
-    }
 }
