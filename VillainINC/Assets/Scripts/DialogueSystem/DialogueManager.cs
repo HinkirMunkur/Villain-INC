@@ -79,9 +79,9 @@ namespace Munkur
                 activeDialogueHolder.audioSource.clip = realDialogue.textAudios[dialogueIndex];
             }
 
-            GeneralDialogueColorController.Instance.ClearWordColorList(activeDialogueHolder.dialogueHolderText);
-            GeneralDialogueImageController.Instance.ClearImages(activeDialogueHolder.dialogueHolderText);
-            GeneralDialogueEffectController.Instance.ClearWordEffectList(activeDialogueHolder.dialogueHolderText);
+            //GeneralDialogueColorController.Instance.ClearWordColorList(activeDialogueHolder.dialogueHolderText);
+            //GeneralDialogueImageController.Instance.ClearImages(activeDialogueHolder.dialogueHolderText);
+            //GeneralDialogueEffectController.Instance.ClearWordEffectList(activeDialogueHolder.dialogueHolderText);
             
             StopAllCoroutines();
             StartCoroutine(TypeSentence(realDialogue));
@@ -131,15 +131,17 @@ namespace Munkur
                 }
                 else
                 {
-                    GeneralDialogueColorController.Instance.TryToAddColorToWord(word, wordCounter);
-                    GeneralDialogueEffectController.Instance.TryToAddEffectToWord(word, wordCounter);
+                    //GeneralDialogueColorController.Instance.TryToAddColorToWord(word, wordCounter);
+                    //GeneralDialogueEffectController.Instance.TryToAddEffectToWord(word, wordCounter);
                     
+                    /*
                     if (GeneralDialogueImageController.Instance.TryToAddImage(word))
                     {
                         activeDialogueHolder.dialogueHolderText.text += 
                             GeneralDialogueImageController.Instance.
                                 AddImageAfterWord(activeDialogueHolder.dialogueHolderText, word, wordCounter);
                     }
+                    */
                     
                     wordCounter++;
                     word = String.Empty;
@@ -150,6 +152,7 @@ namespace Munkur
             // Check the last word
             if (word != String.Empty)
             {
+                /*
                 GeneralDialogueColorController.Instance.TryToAddColorToWord(word, wordCounter);
                 GeneralDialogueEffectController.Instance.TryToAddEffectToWord(word, wordCounter);
                 
@@ -159,6 +162,7 @@ namespace Munkur
                         GeneralDialogueImageController.Instance.
                             AddImageAfterWord(activeDialogueHolder.dialogueHolderText, word, wordCounter);
                 } 
+                */
                 
                 wordCounter++;
                 word = String.Empty;
