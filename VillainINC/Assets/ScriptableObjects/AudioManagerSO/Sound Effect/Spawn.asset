@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: ee39f8bb7da6d744fb76ef525ee10566, type: 3}
   audioName: Spawn
-  volume: 0.5
+  volume: 0.3
   isLooping: 0

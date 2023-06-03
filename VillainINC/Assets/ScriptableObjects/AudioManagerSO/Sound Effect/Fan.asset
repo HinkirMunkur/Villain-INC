@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 330221b7189da7145b1987e5122f3caf, type: 3}
   audioName: Fan
-  volume: 0.1
+  volume: 0.03
   isLooping: 0

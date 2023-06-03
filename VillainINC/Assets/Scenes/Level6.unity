@@ -335,11 +335,11 @@ PrefabInstance:
       objectReference: {fileID: 1498225156}
     - target: {fileID: 1460719022248856476, guid: fad8934d974d02a4a812644b72d51b76, type: 3}
       propertyPath: m_Size.x
-      value: 2.199416
+      value: 2.893881
       objectReference: {fileID: 0}
     - target: {fileID: 1460719022248856476, guid: fad8934d974d02a4a812644b72d51b76, type: 3}
       propertyPath: m_Offset.x
-      value: -1.1091188
+      value: -1.4563514
       objectReference: {fileID: 0}
     - target: {fileID: 1460719023633411340, guid: fad8934d974d02a4a812644b72d51b76, type: 3}
       propertyPath: fanForceVector.x
