@@ -48,19 +48,39 @@ public class HarpoonBasic : ClickableTrapBasic
         {
             currentAngle = transform.eulerAngles.z;
 
-            while (currentAngle < initialRotation + angleToRotate) 
+            if (angleToRotate > 0) 
             {
-                transform.eulerAngles = Vector3.forward * (currentAngle + 1);
-                currentAngle = transform.eulerAngles.z;
+                while (currentAngle < initialRotation + angleToRotate) 
+                {
+                    transform.eulerAngles = Vector3.forward * (currentAngle + 1);
+                    currentAngle = transform.eulerAngles.z;
 
-                yield return new WaitForSeconds(0.01f);
+                    yield return new WaitForSeconds(0.01f);
+                }
+                while (currentAngle >= initialRotation) 
+                {
+                    transform.eulerAngles = Vector3.forward * (currentAngle - 1);
+                    currentAngle = transform.eulerAngles.z;
+
+                    yield return new WaitForSeconds(0.01f);
+                }
             }
-            while (currentAngle >= initialRotation) 
+            else 
             {
-                transform.eulerAngles = Vector3.forward * (currentAngle - 1);
-                currentAngle = transform.eulerAngles.z;
+                while (currentAngle > initialRotation + angleToRotate) 
+                {
+                    transform.eulerAngles = Vector3.forward * (currentAngle - 1);
+                    currentAngle = transform.eulerAngles.z;
 
-                yield return new WaitForSeconds(0.01f);
+                    yield return new WaitForSeconds(0.01f);
+                }
+                while (currentAngle <= initialRotation) 
+                {
+                    transform.eulerAngles = Vector3.forward * (currentAngle + 1);
+                    currentAngle = transform.eulerAngles.z;
+
+                    yield return new WaitForSeconds(0.01f);
+                }
             }
         }
     }
