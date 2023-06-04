@@ -202,7 +202,6 @@ public class SubjectUIController : MonoBehaviour
         {
             if (subjectBasicUiList[selectedSubjectIndex].TryToBuySubject())
             {
-                //VibrationManager.Vibrate(VibrationManager.EVibrationIntensity.Medium);
                 AudioManager.Instance.PlaySoundEffect("Buy");
                 // Buy -> Use
                 cardAmountText.transform.parent.gameObject.SetActive(false);
@@ -211,7 +210,6 @@ public class SubjectUIController : MonoBehaviour
             }
             else
             {
-                //VibrationManager.Vibrate(VibrationManager.EVibrationIntensity.Light);
                 AudioManager.Instance.PlaySoundEffect("No");
                 buyClickable.transform.DOShakePosition(shakeButtonDuration, shakeButtonStrength);
             }
@@ -236,7 +234,6 @@ public class SubjectUIController : MonoBehaviour
         }
         else if (skinData == 2)
         {
-            //VibrationManager.Vibrate(VibrationManager.EVibrationIntensity.Light);
             AudioManager.Instance.PlaySoundEffect("No");
             buyClickable.transform.DOShakePosition(shakeButtonDuration, shakeButtonStrength);
         }

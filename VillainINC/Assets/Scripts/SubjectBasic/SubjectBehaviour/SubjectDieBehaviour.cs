@@ -16,8 +16,8 @@ public class SubjectDieBehaviour : MonoBehaviour
             capsuleCollider2D.enabled = false;
             subjectBasic.MovementBehaviour.SubjectRigidbody2D.bodyType = RigidbodyType2D.Static;
             
-            //VibrationManager.Vibrate(VibrationManager.EVibrationIntensity.Medium);
-            
+            Vibrator.Vibrate(EVibrationLevel.LIGHT);
+
             subjectBasic.SubjectStateMachineController.DoTransition(ESubjectState.NONE);
             subjectBasic.SubjectAnimationController.PlayAnimation(eSubjectDieAnimation, 
                 OnAnimationFinished: () =>

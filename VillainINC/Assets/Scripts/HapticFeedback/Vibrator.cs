@@ -1,5 +1,12 @@
 using UnityEngine;
 
+public enum EVibrationLevel
+{
+    LIGHT,
+    MEDIUM,
+    HEAVY
+}
+
 public static class Vibrator
 {
     
@@ -13,14 +20,24 @@ public static class Vibrator
     public static AndroidJavaObject vibrator;
 #endif
 
-    public static void Vibrate(float vibrateTimeMilliSeconds = 250)
+    public static void Vibrate(EVibrationLevel vibrationLevel)
     {
-        if (IsAndroid())
+        if(vibrationLevel == EVibrationLevel.LIGHT)
         {
-            vibrator.Call("vibrate", vibrateTimeMilliSeconds);
+            Handheld.Vibrate();
         }
-        else
+        else if(vibrationLevel == EVibrationLevel.MEDIUM)
         {
+            Handheld.Vibrate();
+            Handheld.Vibrate();
+            Handheld.Vibrate();
+        }
+        else if(vibrationLevel == EVibrationLevel.HEAVY)
+        {
+            Handheld.Vibrate();
+            Handheld.Vibrate();
+            Handheld.Vibrate();
+            Handheld.Vibrate();
             Handheld.Vibrate();
         }
     }
@@ -35,7 +52,7 @@ public static class Vibrator
 
     public static bool IsAndroid()
     {
-#if UNITY_ANDROID 
+#if UNITY_ANDROID && !UNITY_EDITOR
     return true;
 #else
         return false;
