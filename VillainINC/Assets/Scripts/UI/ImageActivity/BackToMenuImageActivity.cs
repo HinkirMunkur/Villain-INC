@@ -1,22 +1,3 @@
-using Munkur;
-using UnityEngine;
-using UnityEngine.EventSystems;
-
-public class BackToMenuImageActivity : ImageActivity
-{
-    public override void OnPointerClick(PointerEventData eventData)
-    {
-        if(LevelFlowManager.Instance.IsLevelFinished)
-        {
-            return;
-        }
-
-        if (Time.timeScale == 0)
-        {
-            Time.timeScale = 1;
-        }
-
-        AudioManager.Instance.PlaySoundEffect("Back");
-        LevelController.Instance.LoadLevelWithIndex(1);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:529df6becf897231510b5ec9b4e94464c247a2cd5904e87e86f1fb73797dd8aa
+size 495
