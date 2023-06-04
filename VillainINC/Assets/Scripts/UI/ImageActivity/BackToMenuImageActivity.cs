@@ -17,6 +17,7 @@ public class BackToMenuImageActivity : ImageActivity
         }
         
         AudioManager.Instance.PlaySoundEffect("Back");
+        AudioManager.Instance.StopMusic();
         TransitionManager.Instance.EndSceneTransition(LevelController.Instance.GetSceneNameWithIndex(1));
     }
 }
