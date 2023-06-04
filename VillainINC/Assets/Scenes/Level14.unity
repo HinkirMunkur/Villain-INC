@@ -3298,6 +3298,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9033295131158992569, guid: a7d1411fbbf851d469bff1d57a453cc2, type: 3}
+      propertyPath: m_Size.x
+      value: 0.14290412
+      objectReference: {fileID: 0}
+    - target: {fileID: 9033295131158992569, guid: a7d1411fbbf851d469bff1d57a453cc2, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.013222039
+      objectReference: {fileID: 0}
     - target: {fileID: 9033295131870077908, guid: a7d1411fbbf851d469bff1d57a453cc2, type: 3}
       propertyPath: m_Name
       value: AutomatedDoor
@@ -3425,6 +3433,14 @@ PrefabInstance:
     - target: {fileID: 4813711307146134494, guid: cb152a61ee4efd849bd371314884a4de, type: 3}
       propertyPath: m_Name
       value: TrapDoorBasic
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813711307550899196, guid: cb152a61ee4efd849bd371314884a4de, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5579413
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813711307550899196, guid: cb152a61ee4efd849bd371314884a4de, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.026962414
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb152a61ee4efd849bd371314884a4de, type: 3}
