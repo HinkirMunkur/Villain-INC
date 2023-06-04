@@ -779,11 +779,11 @@ PrefabInstance:
       objectReference: {fileID: 1498225156}
     - target: {fileID: 1460719022248856476, guid: fad8934d974d02a4a812644b72d51b76, type: 3}
       propertyPath: m_Size.x
-      value: 1.9040912
+      value: 1.7307342
       objectReference: {fileID: 0}
     - target: {fileID: 1460719022248856476, guid: fad8934d974d02a4a812644b72d51b76, type: 3}
       propertyPath: m_Offset.x
-      value: -0.96145636
+      value: -0.87477785
       objectReference: {fileID: 0}
     - target: {fileID: 1460719023633411340, guid: fad8934d974d02a4a812644b72d51b76, type: 3}
       propertyPath: fanForceVector.x
@@ -1036,7 +1036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1460719023633411340, guid: fad8934d974d02a4a812644b72d51b76, type: 3}
       propertyPath: fanForceVector.y
-      value: 10000
+      value: 11000
       objectReference: {fileID: 0}
     - target: {fileID: 1460719023633411341, guid: fad8934d974d02a4a812644b72d51b76, type: 3}
       propertyPath: m_RootOrder
@@ -2302,7 +2302,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6356303868367313380, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -69
+      value: -68.99999
       objectReference: {fileID: 0}
     - target: {fileID: 6748307670629380801, guid: 5e84fef2f3028134ea2d45540c9cc74f, type: 3}
       propertyPath: m_LocalScale.x
