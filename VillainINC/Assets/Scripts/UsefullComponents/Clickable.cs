@@ -19,12 +19,12 @@ public class Clickable : MonoBehaviour
     
     private void Awake()
     { 
-        MouseInputSystemManager.Instance.OnMouseLeftClicked += OnClick;
+        InputSystemManager.Instance.OnInputStarted += OnClick;
     }
 
     private void OnDestroy() 
     {
-        MouseInputSystemManager.Instance.OnMouseLeftClicked -= OnClick;    
+        InputSystemManager.Instance.OnInputStarted -= OnClick;    
     }
 
     public virtual void OnClick(Vector2 mousePosition) 
@@ -43,7 +43,7 @@ public class Clickable : MonoBehaviour
 
             if (oneTime)
             {
-                MouseInputSystemManager.Instance.OnMouseLeftClicked -= OnClick; 
+                InputSystemManager.Instance.OnInputStarted -= OnClick; 
             }
         }
     }

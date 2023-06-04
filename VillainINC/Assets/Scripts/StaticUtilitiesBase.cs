@@ -6,6 +6,11 @@ public static class StaticUtilitiesBase
 {
     public static bool IsPointerOverUIObject()
     {
+        if (EventSystem.current == null)
+        {
+            return false;
+        }
+        
         PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
         eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         List<RaycastResult> results = new List<RaycastResult>();

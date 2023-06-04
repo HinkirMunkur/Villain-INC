@@ -15,14 +15,14 @@ public class Draggable : MonoBehaviour
 
     private void Awake()
     { 
-        MouseInputSystemManager.Instance.OnMouseLeftClicked += OnDrag;    
-        MouseInputSystemManager.Instance.OnMouseReleased += OnDragEnd;    
+        InputSystemManager.Instance.OnInputStarted += OnDrag;    
+        InputSystemManager.Instance.OnInputFinished += OnDragEnd;    
     }
 
     private void OnDestroy() 
     {
-        MouseInputSystemManager.Instance.OnMouseLeftClicked -= OnDrag;    
-        MouseInputSystemManager.Instance.OnMouseReleased -= OnDragEnd;  
+        InputSystemManager.Instance.OnInputStarted -= OnDrag;    
+        InputSystemManager.Instance.OnInputFinished -= OnDragEnd;  
     }
 
     public virtual void OnDrag(Vector2 mousePosition) 

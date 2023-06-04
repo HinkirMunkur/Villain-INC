@@ -8,12 +8,12 @@ public abstract class GameSceneButtonActivity : MonoBehaviour
     
     private void Awake()
     { 
-        MouseInputSystemManager.Instance.OnMouseLeftClicked += OnMouseLeftClicked;
+        InputSystemManager.Instance.OnInputStarted += OnMouseLeftClicked;
     }
 
     private void OnDestroy() 
     {
-        MouseInputSystemManager.Instance.OnMouseLeftClicked -= OnMouseLeftClicked;    
+        InputSystemManager.Instance.OnInputStarted -= OnMouseLeftClicked;    
     }
 
     protected virtual void OnMouseLeftClicked(Vector2 delta)
