@@ -486,7 +486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1460719023633411340, guid: fad8934d974d02a4a812644b72d51b76, type: 3}
       propertyPath: fanForceVector.y
-      value: 1500
+      value: 1250
       objectReference: {fileID: 0}
     - target: {fileID: 1460719023633411341, guid: fad8934d974d02a4a812644b72d51b76, type: 3}
       propertyPath: m_RootOrder
