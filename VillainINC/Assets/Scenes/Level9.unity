@@ -184,7 +184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3728748504764966080, guid: 65bdb9a686f92c8429d9a1f3993ea21e, type: 3}
       propertyPath: alwaysShoot
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8914476759297371826, guid: 65bdb9a686f92c8429d9a1f3993ea21e, type: 3}
       propertyPath: m_LocalPosition.x
