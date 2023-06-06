@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enableInputListener: 1
-  isMobileInput: 1
+  isMobileInput: 0
 --- !u!1 &1279356086
 GameObject:
   m_ObjectHideFlags: 0
