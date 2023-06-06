@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Image))]
 public abstract class ImageActivity : MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField] private Image image;
+    [SerializeField] protected Image image;
 
     public void DeactivateButton()
     {
