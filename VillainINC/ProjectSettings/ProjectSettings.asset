@@ -159,6 +159,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.HinkirMunkur.VillainINC
     Standalone: com.DefaultCompany.2DGameJamCodeBase
+    iPhone: com.HinkirMunkur.Villain-INC
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -525,16 +526,18 @@ PlayerSettings:
   m_BuildTargetGroupLightmapEncodingQuality: []
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetNormalMapEncoding: []
-  m_BuildTargetDefaultTextureCompressionFormat: []
+  m_BuildTargetDefaultTextureCompressionFormat:
+  - m_BuildTarget: Android
+    m_Format: 2
   playModeTestRunnerEnabled: 0
   runPlayModeTestAsEditModeTest: 0
   actionOnDotNetUnhandledException: 1
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: 
-  locationUsageDescription: 
-  microphoneUsageDescription: 
+  cameraUsageDescription: none
+  locationUsageDescription: none
+  microphoneUsageDescription: none
   bluetoothUsageDescription: 
   switchNMETAOverride: 
   switchNetLibKey: 
