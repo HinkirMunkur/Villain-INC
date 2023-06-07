@@ -68,8 +68,8 @@ namespace Munkur
                 ["F5"] = 13
             };
 
-            SetMusicVolume(20);
-            SetSoundEffectVolume(20);
+            SetMusicVolume(-10);
+            SetSoundEffectVolume(-10);
         }
 
         /**
