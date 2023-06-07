@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d15a2a507ecc66488416301f21f9a64, type: 3}
   m_Name: BoxPush
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: 12b4d844b9a31d549a18fb65d8894122, type: 3}
+  audioClip: {fileID: 8300000, guid: 8ae2ff1cf0f8c9842ad237abcb6788bd, type: 3}
   audioName: BoxPush
   volume: 1
+  isLooping: 0
