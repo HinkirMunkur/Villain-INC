@@ -1,3 +1,4 @@
+using System;
 using System.Reflection;
 using UnityEngine;
 
@@ -18,12 +19,14 @@ public class ManagerSceneController : SingletonnPersistent<ManagerSceneControlle
         }
         else
         {
+            QualitySettings.vSyncCount = 0;
+            Application.targetFrameRate = 60;
             Destroy(this.gameObject);
             LevelController.Instance.LoadNextLevel();
         }
 
     }
-    
+
 #if MANAGER_SCENE_EDITOR
     
     private void OnDestroy()

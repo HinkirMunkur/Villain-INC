@@ -22,11 +22,6 @@ namespace Munkur
 
         public bool TransitionStarted { get; set; } = false;
 
-        private void Start()
-        {
-            StartSceneTransition();
-        }
-
         public void StartSceneTransition()
         {
             StartCoroutine(ExecuteStartSceneTransition());
@@ -62,7 +57,7 @@ namespace Munkur
             endTransition.ExecuteCustomEndTransition(duration);
             
             yield return new WaitForSecondsRealtime(endTransition.
-                TransitionDuration);
+                TransitionDuration+2);
 
             if (sceneName != null)
             {

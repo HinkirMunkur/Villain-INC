@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5691429027190759372
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915460, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478162064733915463, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_Name
+      value: NinjaSubjectBasic
+      objectReference: {fileID: 0}
+    - target: {fileID: 4207805422041648540, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -948678156, guid: 593008da075d57447adba287fe5ca6b3, type: 3}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[0].AnimationName
+      value: NinjaIdle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[1].AnimationName
+      value: NinjaRun
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[1].AnimationType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[2].AnimationName
+      value: NinjaFall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[2].AnimationType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[3].AnimationName
+      value: NinjaLand
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[3].AnimationType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[4].AnimationName
+      value: NinjaPush
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[4].AnimationType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[5].AnimationName
+      value: NinjaJump
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[5].AnimationType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[6].AnimationName
+      value: NinjaCrushed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[6].AnimationType
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[7].AnimationName
+      value: NinjaShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[7].AnimationType
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[8].AnimationName
+      value: NinjaSpikeAbove
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[8].AnimationType
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[9].AnimationName
+      value: NinjaSpikeBelow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420560, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: animationTypeNameList.Array.data[9].AnimationType
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957842317389420563, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ee8ddcd29354bee43a2818293b48fffc, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: da7fa731d349aca44bdc67be0e127e95, type: 3}

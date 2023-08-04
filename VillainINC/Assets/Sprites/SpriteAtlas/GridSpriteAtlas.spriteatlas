@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GridSpriteAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: bc1ab07b180a1d9469a17f2b2fbe3b4d, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -1050168347, guid: 9ad4eea4ef9e97b4c90e59767418047c, type: 3}
+  - {fileID: 1819145071, guid: 9ad4eea4ef9e97b4c90e59767418047c, type: 3}
+  - {fileID: 195993806, guid: 9ad4eea4ef9e97b4c90e59767418047c, type: 3}
+  - {fileID: 1038637071, guid: 9ad4eea4ef9e97b4c90e59767418047c, type: 3}
+  - {fileID: 571399694, guid: 9ad4eea4ef9e97b4c90e59767418047c, type: 3}
+  - {fileID: -1643288110, guid: 9ad4eea4ef9e97b4c90e59767418047c, type: 3}
+  - {fileID: 439964025, guid: 9ad4eea4ef9e97b4c90e59767418047c, type: 3}
+  - {fileID: 747236299, guid: 9ad4eea4ef9e97b4c90e59767418047c, type: 3}
+  - {fileID: 1865022225, guid: 9ad4eea4ef9e97b4c90e59767418047c, type: 3}
+  - {fileID: -1918367301, guid: 0fde690537318cc48b20b4b111fe7a29, type: 3}
+  - {fileID: -1305242448, guid: 0fde690537318cc48b20b4b111fe7a29, type: 3}
+  - {fileID: -810395041, guid: 0fde690537318cc48b20b4b111fe7a29, type: 3}
+  - {fileID: -1006510486, guid: 0fde690537318cc48b20b4b111fe7a29, type: 3}
+  - {fileID: -812217254, guid: 0fde690537318cc48b20b4b111fe7a29, type: 3}
+  - {fileID: 1064797905, guid: 0fde690537318cc48b20b4b111fe7a29, type: 3}
+  - {fileID: -802048328, guid: 0fde690537318cc48b20b4b111fe7a29, type: 3}
+  - {fileID: 1888567315, guid: 0fde690537318cc48b20b4b111fe7a29, type: 3}
+  - {fileID: -70672063, guid: 0fde690537318cc48b20b4b111fe7a29, type: 3}
+  - {fileID: -650696874, guid: 786bba5e53e5035428fa040c86288c7d, type: 3}
+  - {fileID: -1335195563, guid: 786bba5e53e5035428fa040c86288c7d, type: 3}
+  - {fileID: 145886833, guid: 786bba5e53e5035428fa040c86288c7d, type: 3}
+  - {fileID: 862725139, guid: 786bba5e53e5035428fa040c86288c7d, type: 3}
+  - {fileID: 1686714463, guid: 786bba5e53e5035428fa040c86288c7d, type: 3}
+  - {fileID: -949188017, guid: 786bba5e53e5035428fa040c86288c7d, type: 3}
+  - {fileID: -2002964014, guid: 786bba5e53e5035428fa040c86288c7d, type: 3}
+  - {fileID: -439954513, guid: 786bba5e53e5035428fa040c86288c7d, type: 3}
+  - {fileID: 63039742, guid: 786bba5e53e5035428fa040c86288c7d, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - duvar_0
+  - duvar_1
+  - duvar_2
+  - duvar_3
+  - duvar_4
+  - duvar_5
+  - duvar_6
+  - duvar_7
+  - duvar_8
+  - bloklar_yer_0
+  - bloklar_yer_1
+  - bloklar_yer_2
+  - bloklar_yer_3
+  - bloklar_yer_4
+  - bloklar_yer_5
+  - bloklar_yer_6
+  - bloklar_yer_7
+  - bloklar_yer_8
+  - bloklar_1
+  - bloklar_0
+  - bloklar_3
+  - bloklar_2
+  - bloklar_5
+  - bloklar_4
+  - bloklar_7
+  - bloklar_6
+  - bloklar_8
+  m_RenderDataMap: {}
+  m_Tag: GridSpriteAtlas
+  m_IsVariant: 0

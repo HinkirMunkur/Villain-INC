@@ -65,6 +65,11 @@ public abstract class DialogueHolder : MonoBehaviour
     
     private void OnDestroy()
     {
+        if (DialogueManager.Instance == null)
+        {
+            return;
+        }
+        
         DialogueManager.Instance.OnStartDialogueActions -= OnStartDialogueActions;
         DialogueManager.Instance.OnCustomDialogueActions -= OnCustomDialogueActions;
         DialogueManager.Instance.OnEndDialogueActions -= OnEndDialogueActions;
@@ -103,8 +108,8 @@ public abstract class DialogueHolder : MonoBehaviour
 
     protected virtual RealDialogue OnCustomDialogueActions(int index)
     {
-        TextColorController.Instance.ChangeWholeColor(dialogueHolderText, 
-            realDialogue.diffColor[index]);
+        //TextColorController.Instance.ChangeWholeColor(dialogueHolderText, 
+          //  realDialogue.diffColor[index]);
         
         SetEtextEffects(realDialogue.textEffects[index]);
 

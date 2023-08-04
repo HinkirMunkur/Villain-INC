@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Box
+  - Ground
+  - Tramboline
+  - Portal
+  - Head
+  - Wall
+  - PushBox
+  - Spear
+  - Wind
   layers:
   - Default
   - TransparentFX
@@ -13,14 +22,14 @@ TagManager:
   - UI
   - DragObject
   - ClickObject
+  - SubjectBasic
+  - Spear
+  - Fan
+  - Laser
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - DeadParticle
+  - Ground
+  - Wall
   - 
   - 
   - 

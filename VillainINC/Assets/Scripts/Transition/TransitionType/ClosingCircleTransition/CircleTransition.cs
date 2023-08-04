@@ -34,13 +34,13 @@ public class CircleTransition : Transition
     
     private void OpenBlackScreen(float duration)
     {
-        StartCoroutine(Transition(duration, 0, 1, 0));
+        StartCoroutine(Transition(duration, 0, 1, 0.5f));
     }
 
     private void CloseBlackScreen(float duration)
     {
-        StartCoroutine(Transition(duration, 1, 0.15f,0));
-        StartCoroutine(Transition(duration/2, 0.15f, 0,2.5f));
+        StartCoroutine(Transition(duration, 1, 0,0));
+        //StartCoroutine(Transition(duration/2, 0.15f, 0,2.5f));
     }
 
     private void DrawBlackScreen()
@@ -82,8 +82,11 @@ public class CircleTransition : Transition
 
     private IEnumerator Transition(float duration, float beginRadius, float endRadius, float delay)
     {
-        yield return new WaitForSeconds(delay);
         var mat = blackBackground.material;
+        mat.SetFloat(RADIUS, beginRadius);
+        
+        yield return new WaitForSeconds(delay);
+        
         var time = 0f;
         while (time <= duration)
         {
