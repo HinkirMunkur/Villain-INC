@@ -24,7 +24,9 @@ public class Clickable : MonoBehaviour
     {
         ray = Physics2D.Raycast(rayCamera.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 
             Mathf.Infinity, layer);
-
+        
+        Debug.DrawRay(rayCamera.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, Color.red);
+        
         if (ray.collider != null && ray.collider.gameObject == gameObject) 
         {
             OnClicked?.Invoke();
